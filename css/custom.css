@@ -46,9 +46,9 @@ header .search_form input { padding: 8px 0 8px 14px;}
 header .search_form button { background: #fff;}
 header .search_form button>i { color: #424242; font-size: 16px;}
 header .search_form input::-webkit-input-placeholder { font: 14px 'Open Sans', sans-serif; color: #424242; opacity: 1; -webkit-transition: opacity 0.3s ease; -moz-transition: opacity 0.3s ease; -o-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
-header .search_form input::-moz-placeholder { font: 14px 'Open Sans', sans-serif; color: #000; opacity: 1; -webkit-transition: opacity 0.3s ease; -moz-transition: opacity 0.3s ease; -o-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
-header .search_form input:-moz-placeholder { font: 14px 'Open Sans', sans-serif; color: #000; opacity: 1; -webkit-transition: opacity 0.3s ease; -moz-transition: opacity 0.3s ease; -o-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
-header .search_form input:-ms-input-placeholder { font: 14px 'Open Sans', sans-serif; color: #000; opacity: 1; -webkit-transition: opacity 0.3s ease; -moz-transition: opacity 0.3s ease; -o-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+header .search_form input::-moz-placeholder { font: 14px 'Open Sans', sans-serif; color: #424242; opacity: 1; -webkit-transition: opacity 0.3s ease; -moz-transition: opacity 0.3s ease; -o-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+header .search_form input:-moz-placeholder { font: 14px 'Open Sans', sans-serif; color: #424242; opacity: 1; -webkit-transition: opacity 0.3s ease; -moz-transition: opacity 0.3s ease; -o-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+header .search_form input:-ms-input-placeholder { font: 14px 'Open Sans', sans-serif; color: #424242; opacity: 1; -webkit-transition: opacity 0.3s ease; -moz-transition: opacity 0.3s ease; -o-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
 header .search_form input:focus::-webkit-input-placeholder { opacity: 0; -webkit-transition: opacity 0.3s ease; -moz-transition: opacity 0.3s ease; -o-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
 header .search_form input:focus::-moz-placeholder { opacity: 0; -webkit-transition: opacity 0.3s ease; -moz-transition: opacity 0.3s ease; -o-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
 header .search_form input:focus:-moz-placeholder { opacity: 0; -webkit-transition: opacity 0.3s ease; -moz-transition: opacity 0.3s ease; -o-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
