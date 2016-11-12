@@ -23,12 +23,9 @@ h4 { font: 22px 'Open Sans', sans-serif; color: #424242;}
 .container_nav { 
 	background: rgba(0,93,19,1.0);
 	background: -moz-linear-gradient(top, rgba(0,93,19,0.76) 0%, rgba(0,93,19,1) 100%);
-	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,93,19,0.76)), color-stop(100%, rgba(0,93,19,1)));
 	background: -webkit-linear-gradient(top, rgba(0,93,19,0.76) 0%, rgba(0,93,19,1) 100%);
 	background: -o-linear-gradient(top, rgba(0,93,19,0.76) 0%, rgba(0,93,19,1) 100%);
-	background: -ms-linear-gradient(top, rgba(0,93,19,0.76) 0%, rgba(0,93,19,1) 100%);
 	background: linear-gradient(to bottom, rgba(0,93,19,0.76) 0%, rgba(0,93,19,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005d13', endColorstr='#005d13', GradientType=0 );
 }
 
 header a.logo { float: left; margin: 16px 0 12px;}
@@ -37,7 +34,7 @@ header a.logo p, header a.logo h1 { float: left; margin: 0; padding-left: 16px; 
 header .social { float: right;}
 header .social p { margin: 0; font-size: 14px;}
 header .social p i { padding-right: 6px;}
-header .social select { float: right; width:80px; margin-top: 12px; padding-left: 15px; border: 0; font: 16px/34px 'Open Sans', sans-serif; color: #424242; outline:none; background: #FBFBFB url(../img/select_arrow.png) 57px center no-repeat; -webkit-appearance: none; appearance: none;}
+header .social select { float: right; width:80px; margin-top: 12px; padding-left: 15px; border: 0; font: 16px/34px 'Open Sans', sans-serif; color: #424242; outline:none; background: #FBFBFB url(../img/select_arrow.png) 57px center no-repeat; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
 header .social ul { float: right; margin: 16px 30px 0 0;}
 header .social ul li { display: inline-block; margin-right: 12px;}
 header .social ul li:last-child { margin-right: 0;}
@@ -64,17 +61,13 @@ header #main_menu ul li:after { content: ' '; display: block; position: absolute
 header #main_menu ul li:last-child:after { border-left: none;}
 header #main_menu ul li a { padding: 15px 30px 16px; font-size: 14px; color: #fff;  line-height: 50px; text-transform: uppercase;}
 
-.main_image { background: url(../img/main_image.png) center center no-repeat; background-position: cover;}
+.main_image { background: url(../img/main_image.png) center center no-repeat; background-size: cover;}
 .main_image .image_text { float: right; max-width: 567px; margin: 100px 0 124px;
 	background: rgba(10,102,29,1.0);
 	background: -moz-linear-gradient(left, rgba(10,102,29,0.52) 0%, rgba(10,102,29,0.86) 25%, rgba(10,102,29,1) 50%, rgba(10,102,29,1) 100%);
-	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(10,102,29,0.52)), color-stop(25%, rgba(10,102,28,0.86)), color-stop(50%, rgba(10,102,29,1)), color-stop(100%, rgba(10,102,29,1)));
 	background: -webkit-linear-gradient(left, rgba(10,102,29,0.52) 0%, rgba(10,102,28,0.86) 25%, rgba(10,102,29,1) 50%, rgba(10,102,29,1) 100%);
 	background: -o-linear-gradient(left, rgba(10,102,29,0.52) 0%, rgba(10,102,28,0.86) 25%, rgba(10,102,29,1) 50%, rgba(10,102,29,1) 100%);
-	background: -ms-linear-gradient(left, rgba(10,102,29,0.52) 0%, rgba(10,102,28,0.86) 25%, rgba(10,102,29,1) 50%, rgba(10,102,29,1) 100%);
-	background: linear-gradient(to right, rgba(10,102,29,0.52) 0%, rgba(10,102,28,0.86) 25%, rgba(10,102,29,1) 50%, rgba(10,102,29,1) 100%);
 	background: linear-gradient(to right, rgba(10,102,29,0.52) 0%, rgba(10,102,29,0.86) 25%, rgba(10,102,29,1) 50%, rgba(10,102,29,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a661c', endColorstr='#0a661c', GradientType=1 );
 }
 .main_image .image_text:after { content: ' '; display: block; clear: both;}
 .main_image .image_text p { margin: 0; padding: 32px 42px; font: 24px/36px 'Roboto', sans-serif; color: #fff; background: url(../img/main_image_backrico.png) right bottom no-repeat;}
