@@ -42,17 +42,17 @@ header .social ul li a { color: #424242;}
 header .search_form { float: right; margin: 11px;}
 header .search_form:after { content: ' '; display: block; clear: both;}
 header .search_form input, header .search_form button { float: left; display: block; height: 28px; border: none;}
-header .search_form input { padding: 8px 0 8px 14px;}
+header .search_form input { width: 180px; padding: 4px 0 4px 14px;}
 header .search_form button { background: #fff;}
 header .search_form button>i { color: #424242; font-size: 16px;}
-header .search_form input::-webkit-input-placeholder { font: 14px 'Open Sans', sans-serif; color: #424242; opacity: 1; -webkit-transition: opacity 0.3s ease; -moz-transition: opacity 0.3s ease; -o-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
-header .search_form input::-moz-placeholder { font: 14px 'Open Sans', sans-serif; color: #424242; opacity: 1; -webkit-transition: opacity 0.3s ease; -moz-transition: opacity 0.3s ease; -o-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
-header .search_form input:-moz-placeholder { font: 14px 'Open Sans', sans-serif; color: #424242; opacity: 1; -webkit-transition: opacity 0.3s ease; -moz-transition: opacity 0.3s ease; -o-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
-header .search_form input:-ms-input-placeholder { font: 14px 'Open Sans', sans-serif; color: #424242; opacity: 1; -webkit-transition: opacity 0.3s ease; -moz-transition: opacity 0.3s ease; -o-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
-header .search_form input:focus::-webkit-input-placeholder { opacity: 0; -webkit-transition: opacity 0.3s ease; -moz-transition: opacity 0.3s ease; -o-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
-header .search_form input:focus::-moz-placeholder { opacity: 0; -webkit-transition: opacity 0.3s ease; -moz-transition: opacity 0.3s ease; -o-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
-header .search_form input:focus:-moz-placeholder { opacity: 0; -webkit-transition: opacity 0.3s ease; -moz-transition: opacity 0.3s ease; -o-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
-header .search_form input:focus:-ms-input-placeholder { opacity: 0; -webkit-transition: opacity 0.3s ease; -moz-transition: opacity 0.3s ease; -o-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+header .search_form input::-webkit-input-placeholder { font: 14px 'Open Sans', sans-serif; color: #424242; opacity: 1; -webkit-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+header .search_form input::-moz-placeholder { font: 14px 'Open Sans', sans-serif; color: #424242; opacity: 1; -moz-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+header .search_form input:-moz-placeholder { font: 14px 'Open Sans', sans-serif; color: #424242; opacity: 1; -moz-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+header .search_form input:-ms-input-placeholder { font: 14px 'Open Sans', sans-serif; color: #424242; opacity: 1; -ms-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+header .search_form input:focus::-webkit-input-placeholder { opacity: 0; -webkit-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+header .search_form input:focus::-moz-placeholder { opacity: 0; -moz-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+header .search_form input:focus:-moz-placeholder { opacity: 0; -moz-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+header .search_form input:focus:-ms-input-placeholder { opacity: 0; -ms-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
 header #main_menu {}
 header #main_menu ul {}
 header #main_menu ul:after { content: ' '; display: block; clear: both;}
