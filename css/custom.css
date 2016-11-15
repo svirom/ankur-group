@@ -77,8 +77,8 @@ header #main_menu ul li a { padding: 15px 30px 16px; font-size: 14px; color: #ff
 .about_us h2 { margin-bottom: 32px; line-height: 1;}
 .about_us h2 + p { font-size: 20px; line-height: 32px;}
 .about_us h4 { margin: 74px 0 15px; font-size: 24px; font-weight: 700;}
-.about_us h4:before { content: ' '; display: block; position: absolute; width: 14px; height: 14px; border-radius: 50%; background-color: #C6C6C6; left: 50%; margin-left: -7px; margin-top: -44px;}
-.about_us h4:after { content: ' '; display: block; position: absolute; width: 160px; height: 1px; background-color: #C6C6C6; left: 50%; margin-left: -80px; margin-top: -71px;}
+.about_us h4:before { content: ' '; display: block; position: absolute; left: 50%; width: 14px; height: 14px; margin-left: -7px; margin-top: -44px; border-radius: 50%; background-color: #C6C6C6;}
+.about_us h4:after { content: ' '; display: block; position: absolute; left: 50%; width: 160px; height: 1px; margin-left: -80px; margin-top: -71px;background-color: #C6C6C6;}
 .about_us .img {}
 .about_us .img img { padding: 12px 42px; vertical-align: middle;}
 
@@ -90,3 +90,19 @@ header #main_menu ul li a { padding: 15px 30px 16px; font-size: 14px; color: #ff
 .left-5 { margin-left: 5%;}
 .left-10 { margin-left: 10%;}
 .left-15 { margin-left: 15%;}
+
+#documentation { padding: 91px 0 89px; text-align: center;}
+#documentation h2 { margin-bottom: 32px; line-height: 1;}
+#documentation h2 + p { font-size: 20px; line-height: 32px;}
+#documentation .accordion { position: relative;}
+#documentation .accordion .accord_item { margin-top: 70px;}
+#documentation .accordion .accord_item:after { content: ' '; display:block; position: absolute; left: 0; width: 100%; height: 1px; margin-top: 34px; background-color: #C6C6C6;}
+#documentation .accordion .accord_item:last-of-type:after { display: none;}
+#documentation .accordion .accord_item h4 { margin-bottom: 0; padding: 6px 6px 6px 50px; text-align: left; font-size: 22px; color: #248037; background: url(../img/icon_document.png) left center no-repeat; -webkit-transition: opacity 0.3s ease; -moz-transition: opacity 0.3s ease; -o-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+#documentation .accordion .accord_item h4:hover, 
+#documentation .accordion .accord_item h4:active { cursor: pointer; opacity: 0.7; -webkit-transition: opacity 0.3s ease; -moz-transition: opacity 0.3s ease; -o-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+#documentation .accordion .accord_item .accord_content { display: none; padding-top: 34px; text-align: left;}
+#documentation .accordion .accord_item:first-of-type .accord_content { display: block;}
+#documentation .accordion .accord_item .accord_content:after { content: ' '; display: block; clear: both;}
+#documentation .accordion .accord_item .accord_content img { float: left; width: 23.5%; margin-left: 2%;}
+#documentation .accordion .accord_item .accord_content img:first-child { margin-left: 0;}

@@ -13,5 +13,17 @@ $(document).ready(function() {
 	 	});
 	});
 
+//accordion Documentation
+	$(".accordion h4").click(function() {
+      if($(this).next("div").is(":visible")){
+        $(this).next("div").slideUp("slow");
+        $(".accordion:first-of-type .accord_content").slideUp("slow");
+      } 
+      else {
+        $(".accordion .accord_content").slideUp("slow");
+        $(this).next("div").slideToggle("slow");
+      }
+    });
+
 
 });
