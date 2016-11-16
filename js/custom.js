@@ -25,5 +25,12 @@ $(document).ready(function() {
       }
     });
 
+//parallax text on main image
+    $(window).scroll(function(){
+    	var st = $(this).scrollTop();
+    	$('.image_text').css({
+    		"transform" : "translate(0, -" + st/6 + "%)"
+    	});   	
+    });
 
 });

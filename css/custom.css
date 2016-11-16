@@ -17,7 +17,7 @@ a, a:link, a:visited { color: #0264a9; font-weight: normal; text-decoration: non
 h2 { margin: 0; font: 41px 'Roboto', sans-serif; color: #424242;}
 h4 { font: 22px 'Open Sans', sans-serif; color: #424242;}
 
-.container { width: 100%; max-width: 1900px; margin: 0 auto;}
+.container { position: relative; width: 100%; max-width: 1900px; margin: 0 auto;}
 .container_inner { width: 100%; max-width: /*1088px*/1100px; margin: 0 auto; padding: 0 6px;}
 .container_inner:after { content: ' '; display: block; clear: both;}
 .container_nav { 
@@ -61,7 +61,7 @@ header #main_menu ul li:after { content: ' '; display: block; position: absolute
 header #main_menu ul li:last-child:after { border-left: none;}
 header #main_menu ul li a { padding: 15px 30px 16px; font-size: 14px; color: #fff;  line-height: 50px; text-transform: uppercase;}
 
-.main_image { background: url(../img/main_image.png) center center no-repeat; background-size: cover;}
+.main_image { background: #fff url(../img/main_image.png) center center no-repeat; background-size: cover;}
 .main_image .image_text { float: right; max-width: 567px; margin: 100px 0 124px;
 	background: rgba(10,102,29,1.0);
 	background: -moz-linear-gradient(left, rgba(10,102,29,0.52) 0%, rgba(10,102,29,0.86) 25%, rgba(10,102,29,1) 50%, rgba(10,102,29,1) 100%);
@@ -72,7 +72,7 @@ header #main_menu ul li a { padding: 15px 30px 16px; font-size: 14px; color: #ff
 .main_image .image_text:after { content: ' '; display: block; clear: both;}
 .main_image .image_text p { margin: 0; padding: 32px 42px; font: 24px/36px 'Roboto', sans-serif; color: #fff; background: url(../img/main_image_backrico.png) right bottom no-repeat;}
 
-.about_us { padding: 91px 0 64px; text-align: center;}
+.about_us { position: relative; padding: 91px 0 64px; text-align: center; background: #fff;}
 .about_us p { margin-bottom: 24px; text-indent: 12px;}
 .about_us h2 { margin-bottom: 32px; line-height: 1;}
 .about_us h2 + p { font-size: 20px; line-height: 32px;}
@@ -91,7 +91,7 @@ header #main_menu ul li a { padding: 15px 30px 16px; font-size: 14px; color: #ff
 .left-10 { margin-left: 10%;}
 .left-15 { margin-left: 15%;}
 
-#documentation { padding: 91px 0 89px; text-align: center;}
+#documentation { padding: 91px 0 89px; text-align: center; background: #fff;}
 #documentation h2 { margin-bottom: 32px; line-height: 1;}
 #documentation h2 + p { font-size: 20px; line-height: 32px;}
 #documentation .accordion { position: relative;}
@@ -106,3 +106,5 @@ header #main_menu ul li a { padding: 15px 30px 16px; font-size: 14px; color: #ff
 #documentation .accordion .accord_item .accord_content:after { content: ' '; display: block; clear: both;}
 #documentation .accordion .accord_item .accord_content img { float: left; width: 23.5%; margin-left: 2%;}
 #documentation .accordion .accord_item .accord_content img:first-child { margin-left: 0;}
+
+
