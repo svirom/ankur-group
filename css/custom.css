@@ -107,4 +107,13 @@ header #main_menu ul li a { padding: 15px 30px 16px; font-size: 14px; color: #ff
 #documentation .accordion .accord_item .accord_content img { float: left; width: 23.5%; margin-left: 2%;}
 #documentation .accordion .accord_item .accord_content img:first-child { margin-left: 0;}
 
+#contacts { padding: 91px 0 26px; text-align: center; background: #FAFAFA;}
+#contacts h2 {}
+#contacts h2 + p {}
+#contacts .contact_data { float: left; width: 67%;}
+#contacts .contact_data > img:first-child { float: left;}
+#contacts .contact_data p { padding: 0 60px 0 307px; text-align: left;}
+#contacts .contact_form { float: left; width: 33%;}
+#contacts .contact_form form input,
+#contacts .contact_form form textarea { width: 100%;}
 
