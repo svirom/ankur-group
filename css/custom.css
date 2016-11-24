@@ -61,7 +61,7 @@ header #main_menu ul li:after { content: ' '; display: block; position: absolute
 header #main_menu ul li:last-child:after { border-left: none;}
 header #main_menu ul li a { padding: 15px 30px 16px; font-size: 14px; color: #fff;  line-height: 50px; text-transform: uppercase;}
 
-.main_image { background: #fff url(../img/main_image.png) center center no-repeat; background-size: cover;}
+.main_image { background: #fff url(../img/main_image.png) center center no-repeat; background-size: cover; background-attachment: fixed;}
 .main_image .image_text { float: right; max-width: 567px; margin: 100px 0 124px;
 	background: rgba(10,102,29,1.0);
 	background: -moz-linear-gradient(left, rgba(10,102,29,0.52) 0%, rgba(10,102,29,0.86) 25%, rgba(10,102,29,1) 50%, rgba(10,102,29,1) 100%);
@@ -93,7 +93,7 @@ header #main_menu ul li a { padding: 15px 30px 16px; font-size: 14px; color: #ff
 
 #documentation { padding: 91px 0 89px; text-align: center; background: #fff;}
 #documentation h2 { margin-bottom: 32px; line-height: 1;}
-#documentation h2 + p { font-size: 20px; line-height: 32px;}
+#documentation h2 + p { font-size: 20px; line-height: 32px; text-indent: 12px;}
 #documentation .accordion { position: relative;}
 #documentation .accordion .accord_item { margin-top: 70px;}
 #documentation .accordion .accord_item:after { content: ' '; display:block; position: absolute; left: 0; width: 100%; height: 1px; margin-top: 34px; background-color: #C6C6C6;}
@@ -107,13 +107,19 @@ header #main_menu ul li a { padding: 15px 30px 16px; font-size: 14px; color: #ff
 #documentation .accordion .accord_item .accord_content img { float: left; width: 23.5%; margin-left: 2%;}
 #documentation .accordion .accord_item .accord_content img:first-child { margin-left: 0;}
 
-#contacts { padding: 91px 0 26px; text-align: center; background: #FAFAFA;}
-#contacts h2 {}
-#contacts h2 + p {}
-#contacts .contact_data { float: left; width: 67%;}
-#contacts .contact_data > img:first-child { float: left;}
-#contacts .contact_data p { padding: 0 60px 0 307px; text-align: left;}
-#contacts .contact_form { float: left; width: 33%;}
+#contacts { padding: 81px 0 26px; text-align: center; background: #FAFAFA;}
+#contacts h2 { margin-bottom: 32px; line-height: 1;}
+#contacts h2 + p { font-size: 20px; line-height: 32px; text-indent: 12px;}
+#contacts .contact_img { float: left; width: 25%; margin-top: 27px; text-align: left;}
+#contacts .contact_data { float: left; width: 35%; margin-top: 27px; padding: 0 8px 0 28px;}
+#contacts .contact_data p { margin: 6px 0; padding: 0 8px 0 8px; text-align: left; line-height: 1.3;}
+#contacts .contact_data p:first-of-type { margin: 11px 0 24px;}
+#contacts .contact_data p:last-child { margin: 32px 0 16px; line-height: 24px;}
+#contacts .contact_data p span { font-size: 32px; font-weight: bold;}
+#contacts .contact_data p a { color: #3B994E; -webkit-transition: opacity 0.3s ease; -moz-transition: opacity 0.3s ease; -o-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+#contacts .contact_data p a:hover,
+#contacts .contact_data p a:active { opacity: 0.7; -webkit-transition: opacity 0.3s ease; -moz-transition: opacity 0.3s ease; -o-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+#contacts .contact_form { float: left; width: 40%; margin-top: 27px; padding-left: 28px;}
 #contacts .contact_form form input,
 #contacts .contact_form form textarea { width: 100%;}
 
