@@ -7,7 +7,7 @@ font-family: 'Josefin Sans', sans-serif;
 */
 * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 body { margin: 0; border: 0; padding: 0; outline: 0; vertical-align: baseline; background: transparent; font: normal 400 16px/24px 'Open Sans', sans-serif; color: #424242;-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
-input, button { -webkit-appearance: none; outline: none;}
+input, button, textarea { -webkit-appearance: none; outline: none;}
 h1, h2, h3, h4, h5, h6 { font-weight:normal;}
 ol, ul, li { list-style: none; margin: 0; padding: 0;}
 img { max-width: 100%; border: none; outline: none;}
@@ -121,5 +121,22 @@ header #main_menu ul li a { padding: 15px 30px 16px; font-size: 14px; color: #ff
 #contacts .contact_data p a:active { opacity: 0.7; -webkit-transition: opacity 0.3s ease; -moz-transition: opacity 0.3s ease; -o-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
 #contacts .contact_form { float: left; width: 40%; margin-top: 27px; padding-left: 28px;}
 #contacts .contact_form form input,
-#contacts .contact_form form textarea { width: 100%;}
-
+#contacts .contact_form form textarea { width: 100%; margin-bottom: 13px; padding: 14px; border: 1px solid #CFCFCF; font: 20px/20px 'Open Sans', sans-serif;}
+#contacts .contact_form form textarea { height: 184px; resize: none;}
+#contacts .contact_form form input[type="submit"] { font-size: 22px; border: 1px solid #0D681F; color: #FFFFFF; background: #0D681F;}
+#contacts .contact_form form input::-webkit-input-placeholder,
+#contacts .contact_form form textarea::-webkit-input-placeholder { color: #424242; opacity: 1; -webkit-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+#contacts .contact_form form input::-moz-placeholder,
+#contacts .contact_form form textarea::-moz-placeholder { color: #424242; opacity: 1; -moz-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+#contacts .contact_form form input:-moz-placeholder,
+#contacts .contact_form form textarea:-moz-placeholder { color: #424242; opacity: 1; -moz-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+#contacts .contact_form form input:-ms-input-placeholder,
+#contacts .contact_form form textarea:-ms-input-placeholder { color: #424242; opacity: 1; -ms-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+#contacts .contact_form form input:focus::-webkit-input-placeholder,
+#contacts .contact_form form textarea:focus::-webkit-input-placeholder { opacity: 0; -webkit-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+#contacts .contact_form form input:focus::-moz-placeholder,
+#contacts .contact_form form textarea:focus::-moz-placeholder { opacity: 0; -moz-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+#contacts .contact_form form input:focus:-moz-placeholder,
+#contacts .contact_form form textarea:focus:-moz-placeholder { opacity: 0; -moz-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+#contacts .contact_form form input:focus:-ms-input-placeholder,
+#contacts .contact_form form textarea:focus:-ms-input-placeholder { opacity: 0; -ms-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
