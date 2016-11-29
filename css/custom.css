@@ -20,7 +20,7 @@ h4 { font: 22px 'Open Sans', sans-serif; color: #424242;}
 .container { position: relative; width: 100%; max-width: 1900px; margin: 0 auto;}
 .container_inner { width: 100%; max-width: /*1088px*/1100px; margin: 0 auto; padding: 0 6px;}
 .container_inner:after { content: ' '; display: block; clear: both;}
-.container_nav { 
+.container_nav {
 	background: rgba(0,93,19,1.0);
 	background: -moz-linear-gradient(top, rgba(0,93,19,0.76) 0%, rgba(0,93,19,1) 100%);
 	background: -webkit-linear-gradient(top, rgba(0,93,19,0.76) 0%, rgba(0,93,19,1) 100%);
@@ -28,38 +28,53 @@ h4 { font: 22px 'Open Sans', sans-serif; color: #424242;}
 	background: linear-gradient(to bottom, rgba(0,93,19,0.76) 0%, rgba(0,93,19,1) 100%);
 }
 
-header a.logo { float: left; margin: 16px 0 12px;}
-header a.logo img { float: left;}
-header a.logo p, header a.logo h1 { float: left; margin: 0; padding-left: 16px; line-height: 63px; font: 400 24px/63px 'Josefin Sans', sans-serif; color: #003C0C; text-transform: uppercase;}
-header .social { float: right;}
-header .social p { margin: 0; font-size: 14px;}
-header .social p i { padding-right: 6px;}
-header .social select { float: right; width:80px; margin-top: 12px; padding-left: 15px; border: 0; font: 16px/34px 'Open Sans', sans-serif; color: #424242; outline:none; background: #FBFBFB url(../img/select_arrow.png) 57px center no-repeat; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
-header .social ul { float: right; margin: 16px 30px 0 0;}
-header .social ul li { display: inline-block; margin-right: 12px;}
-header .social ul li:last-child { margin-right: 0;}
-header .social ul li a { color: #424242;}
-header .search_form { float: right; margin: 11px;}
-header .search_form:after { content: ' '; display: block; clear: both;}
-header .search_form input, header .search_form button { float: left; display: block; height: 28px; border: none;}
-header .search_form input { width: 180px; padding: 4px 0 4px 14px;}
-header .search_form button { background: #fff;}
-header .search_form button>i { color: #424242; font-size: 16px;}
-header .search_form input::-webkit-input-placeholder { font: 14px 'Open Sans', sans-serif; color: #424242; opacity: 1; -webkit-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
-header .search_form input::-moz-placeholder { font: 14px 'Open Sans', sans-serif; color: #424242; opacity: 1; -moz-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
-header .search_form input:-moz-placeholder { font: 14px 'Open Sans', sans-serif; color: #424242; opacity: 1; -moz-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
-header .search_form input:-ms-input-placeholder { font: 14px 'Open Sans', sans-serif; color: #424242; opacity: 1; -ms-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
-header .search_form input:focus::-webkit-input-placeholder { opacity: 0; -webkit-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
-header .search_form input:focus::-moz-placeholder { opacity: 0; -moz-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
-header .search_form input:focus:-moz-placeholder { opacity: 0; -moz-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
-header .search_form input:focus:-ms-input-placeholder { opacity: 0; -ms-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
-header #main_menu {}
-header #main_menu ul {}
-header #main_menu ul:after { content: ' '; display: block; clear: both;}
-header #main_menu ul li { float: left; display: inline-block; position: relative; height: 50px;}
-header #main_menu ul li:after { content: ' '; display: block; position: absolute; top: 0; right: 0; height: 50px; border-left: 1px solid #014910; border-left-style: ridge; } 
-header #main_menu ul li:last-child:after { border-left: none;}
-header #main_menu ul li a { padding: 15px 30px 16px; font-size: 14px; color: #fff;  line-height: 50px; text-transform: uppercase;}
+header.main_header a.logo { float: left; margin: 16px 0 12px;}
+header.main_header .container_nav a.logo { display: none; float: left; margin: 0;}
+header.main_header .container_nav a.logo h2 { float: left; margin: 0; padding-left: 16px; font: 400 16px/48px 'Josefin Sans', sans-serif; color: #fff; text-transform: uppercase;}
+header.main_header .container_nav a.logo img { padding-top: 3px}
+header.main_header a.logo img { float: left;}
+header.main_header a.logo p, header a.logo h1 { float: left; margin: 0; padding-left: 16px; line-height: 63px; font: 400 24px/63px 'Josefin Sans', sans-serif; color: #003C0C; text-transform: uppercase;}
+header.main_header .social { float: right;}
+header.main_header .social p { margin: 0; font-size: 14px;}
+header.main_header .social p i { padding-right: 6px;}
+header.main_header .social select { float: right; width:80px; margin-top: 12px; padding-left: 15px; border: 0; font: 16px/34px 'Open Sans', sans-serif; color: #424242; outline:none; background: #FBFBFB url(../img/select_arrow.png) 57px center no-repeat; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
+header.main_header .social ul { float: right; margin: 16px 30px 0 0;}
+header.main_header .social ul li { display: inline-block; margin-right: 12px;}
+header.main_header .social ul li:last-child { margin-right: 0;}
+header.main_header .social ul li a { color: #424242;}
+header.main_header .search_form { float: right; margin: 11px;}
+header.main_header .search_form:after { content: ' '; display: block; clear: both;}
+header.main_header .search_form input, header .search_form button { float: left; display: block; height: 28px; border: none;}
+header.main_header .search_form input { width: 180px; padding: 4px 0 4px 14px;}
+header.main_header .search_form button { background: #fff;}
+header.main_header .search_form button>i { color: #424242; font-size: 16px;}
+header.main_header .search_form input::-webkit-input-placeholder { font: 14px 'Open Sans', sans-serif; color: #424242; opacity: 1; -webkit-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+header.main_header .search_form input::-moz-placeholder { font: 14px 'Open Sans', sans-serif; color: #424242; opacity: 1; -moz-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+header.main_header .search_form input:-moz-placeholder { font: 14px 'Open Sans', sans-serif; color: #424242; opacity: 1; -moz-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+header.main_header .search_form input:-ms-input-placeholder { font: 14px 'Open Sans', sans-serif; color: #424242; opacity: 1; -ms-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+header.main_header .search_form input:focus::-webkit-input-placeholder { opacity: 0; -webkit-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+header.main_header .search_form input:focus::-moz-placeholder { opacity: 0; -moz-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+header.main_header .search_form input:focus:-moz-placeholder { opacity: 0; -moz-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+header.main_header .search_form input:focus:-ms-input-placeholder { opacity: 0; -ms-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+header.main_header #main_menu {}
+header.main_header #main_menu ul {}
+header.main_header #main_menu ul:after { content: ' '; display: block; clear: both;}
+header.main_header #main_menu ul li { float: left; display: inline-block; position: relative; height: 50px;}
+header.main_header #main_menu ul li:after { content: ' '; display: block; position: absolute; top: 0; right: 0; height: 50px; border-left: 1px solid #014910; border-left-style: ridge; } 
+header.main_header #main_menu ul li:last-child:after { border-left: none;}
+header.main_header #main_menu ul li a { padding: 15px 30px 16px; font-size: 14px; color: #fff;  line-height: 50px; text-transform: uppercase;}
+header.main_header.fixed .header_top,
+header.main_header.fixed .search_form { display: none;}
+header.main_header.fixed .container_nav a.logo { display: block;}
+header.main_header.fixed #main_menu ul { float: right;}
+header.main_header.fixed .container_nav { position: fixed; top: 0; z-index: 10; background-color: #fff;}
+header.main_header.fixed.fixed_in .container_nav { -webkit-animation-name: fadeInDown; animation-name: fadeInDown; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both;}
+@-webkit-keyframes fadeInDown { from { opacity: 0; -webkit-transform: translate3d(0, -100%, 0); transform: translate3d(0, -100%, 0);} to { opacity: 1; -webkit-transform: none; transform: none;}}
+@keyframes fadeInDown { from { opacity: 0; -webkit-transform: translate3d(0, -100%, 0); transform: translate3d(0, -100%, 0);} to { opacity: 1; -webkit-transform: none; transform: none;}}
+header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fadeOutUp; animation-name: fadeOutUp; -webkit-animation-duration: 2s; animation-duration: 2s; -webkit-animation-fill-mode: both; animation-fill-mode: both;}
+@-webkit-keyframes fadeOutUp { from { opacity: 1;} to { opacity: 0; -webkit-transform: translate3d(0, -100%, 0); transform: translate3d(0, -100%, 0);}}
+@keyframes fadeOutUp { from { opacity: 1;} to { opacity: 0; -webkit-transform: translate3d(0, -100%, 0); transform: translate3d(0, -100%, 0);}}
+
 
 .main_image { background: #fff url(../img/main_image.png) center center no-repeat; background-size: cover; background-attachment: fixed;}
 .main_image .image_text { float: right; max-width: 567px; margin: 100px 0 124px;
@@ -107,7 +122,7 @@ header #main_menu ul li a { padding: 15px 30px 16px; font-size: 14px; color: #ff
 #documentation .accordion .accord_item .accord_content img { float: left; width: 23.5%; margin-left: 2%;}
 #documentation .accordion .accord_item .accord_content img:first-child { margin-left: 0;}
 
-#contacts { padding: 81px 0 26px; text-align: center; background: #FAFAFA;}
+#contacts { padding: 81px 0 64px; text-align: center; background: #FAFAFA;}
 #contacts h2 { margin-bottom: 32px; line-height: 1;}
 #contacts h2 + p { font-size: 20px; line-height: 32px; text-indent: 12px;}
 #contacts .contact_img { float: left; width: 25%; margin-top: 27px; text-align: left;}
@@ -121,9 +136,13 @@ header #main_menu ul li a { padding: 15px 30px 16px; font-size: 14px; color: #ff
 #contacts .contact_data p a:active { opacity: 0.7; -webkit-transition: opacity 0.3s ease; -moz-transition: opacity 0.3s ease; -o-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
 #contacts .contact_form { float: left; width: 40%; margin-top: 27px; padding-left: 28px;}
 #contacts .contact_form form input,
-#contacts .contact_form form textarea { width: 100%; margin-bottom: 13px; padding: 14px; border: 1px solid #CFCFCF; font: 20px/20px 'Open Sans', sans-serif;}
+#contacts .contact_form form textarea { width: 100%; margin-bottom: 13px; padding: 11px 14px; border: 1px solid #CFCFCF; font: 20px/24px 'Open Sans', sans-serif;}
 #contacts .contact_form form textarea { height: 184px; resize: none;}
-#contacts .contact_form form input[type="submit"] { font-size: 22px; border: 1px solid #0D681F; color: #FFFFFF; background: #0D681F;}
+#contacts .contact_form form input:focus,
+#contacts .contact_form form textarea:focus { -webkit-box-shadow: 0px 0px 1px 1px #CFCFCF; -moz-box-shadow: 0px 0px 1px 1px #CFCFCF; box-shadow: 0px 0px 1px 1px #CFCFCF;}
+#contacts .contact_form form input[type="submit"] { font-size: 22px; border: 1px solid #0D681F; color: #FFFFFF; background: #0D681F; -webkit-transition: background 0.3s ease; -moz-transition: background 0.3s ease; -o-transition: background 0.3s ease; transition: background 0.3s ease;}
+#contacts .contact_form form input[type="submit"]:hover, 
+#contacts .contact_form form input[type="submit"]:active { background: #045316; -webkit-transition: background 0.3s ease; -moz-transition: background 0.3s ease; -o-transition: background 0.3s ease; transition: background 0.3s ease;}
 #contacts .contact_form form input::-webkit-input-placeholder,
 #contacts .contact_form form textarea::-webkit-input-placeholder { color: #424242; opacity: 1; -webkit-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
 #contacts .contact_form form input::-moz-placeholder,
@@ -140,3 +159,16 @@ header #main_menu ul li a { padding: 15px 30px 16px; font-size: 14px; color: #ff
 #contacts .contact_form form textarea:focus:-moz-placeholder { opacity: 0; -moz-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
 #contacts .contact_form form input:focus:-ms-input-placeholder,
 #contacts .contact_form form textarea:focus:-ms-input-placeholder { opacity: 0; -ms-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+
+#articles { padding: 81px 0 67px; background: #fff;}
+#articles h2 { margin-bottom: 34px; text-align: center; line-height: 1;}
+#articles article { float: left; width: 23.5%; margin-right: 2%;}
+#articles article:last-of-type { margin-right: 0;}
+#articles article:nth-of-type(4n) { margin-right: 0;}
+#articles article h4 { margin: 12px 0 0;}
+#articles article h4 + p { margin: 6px 0 24px;}
+#articles a { float: right; position: relative; padding-right: 25px; color: #3B994E; text-transform: uppercase;}
+#articles a i { position: absolute; right: 0; top: 4px;}
+
+footer .main_footer { padding: 30px 0 21px; color: #fff; text-align: center; text-transform: uppercase; background: #AAAFAB;}
+footer .main_footer p { margin: 0;}

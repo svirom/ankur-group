@@ -33,4 +33,19 @@ $(document).ready(function() {
     	});   	
     });
 
+//resize menu on scroll
+    $(window).scroll(function(){       
+      if ( ($(this).scrollTop() > 536) && ($('body').width() >= 975) ) {
+          $('header.main_header').removeClass('fixed_out').addClass('fixed').addClass('fixed_in');
+          $('.main_image').css('margin-top','141px');
+      } else 
+      if ( ($(this).scrollTop() <= 536) && ($(this).scrollTop() > 140) && ($('body').width() >= 975) ) {
+          $('header.main_header').removeClass('fixed_in').addClass('fixed_out');  
+      }
+      if ( ($(this).scrollTop() <= 140) && ($('body').width() >= 975) ) {
+          $('header.main_header').removeClass('fixed_in').removeClass('fixed_out').removeClass('fixed');
+          $('.main_image').css('margin-top','0px');
+      }
+    });
+
 });
