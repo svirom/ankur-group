@@ -35,17 +35,33 @@ $(document).ready(function() {
 
 //resize menu on scroll
     $(window).scroll(function(){       
-      if ( ($(this).scrollTop() > 536) && ($('body').width() >= 975) ) {
+      if ( ($(this).scrollTop() > 536) && ($('header.main_header').width() >= 784) ) {
           $('header.main_header').removeClass('fixed_out').addClass('fixed').addClass('fixed_in');
           $('.main_image').css('margin-top','141px');
       } else 
-      if ( ($(this).scrollTop() <= 536) && ($(this).scrollTop() > 140) && ($('body').width() >= 975) ) {
+      if ( ($(this).scrollTop() <= 536) && ($(this).scrollTop() > 140) && ($('header.main_header').width() >= 784) ) {
           $('header.main_header').removeClass('fixed_in').addClass('fixed_out');  
       }
-      if ( ($(this).scrollTop() <= 140) && ($('body').width() >= 975) ) {
+      if ( ($(this).scrollTop() <= 140) && ($('header.main_header').width() >= 784) ) {
           $('header.main_header').removeClass('fixed_in').removeClass('fixed_out').removeClass('fixed');
           $('.main_image').css('margin-top','0px');
       }
+    });
+
+//mobile menu button
+    $('a.nav-opener').click(function(){ 
+      if ($('body').width() < 784)
+          $(this).toggleClass('nav-active');                
+          $('nav#main_menu>ul').slideToggle(300); 
+    });
+
+//show menu after resize from smaller resolution
+    $(window).resize(function() {
+      if ($('body').width() < 784)
+          $('nav#main_menu>ul').css("display","none");
+          $('a.nav-opener').removeClass('nav-active'); 
+      if ($('body').width() >= 784)
+          $('nav#main_menu>ul').css("display","block");
     });
 
 });

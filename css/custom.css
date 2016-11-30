@@ -30,10 +30,13 @@ h4 { font: 22px 'Open Sans', sans-serif; color: #424242;}
 
 header.main_header a.logo { float: left; margin: 16px 0 12px;}
 header.main_header .container_nav a.logo { display: none; float: left; margin: 0;}
-header.main_header .container_nav a.logo h2 { float: left; margin: 0; padding-left: 16px; font: 400 16px/48px 'Josefin Sans', sans-serif; color: #fff; text-transform: uppercase;}
+header.main_header .container_nav a.logo h2 { float: left; margin: 0; padding-left: 16px; font: 400 16px/52px 'Josefin Sans', sans-serif; color: #fff; text-transform: uppercase;}
 header.main_header .container_nav a.logo img { padding-top: 3px}
+header.main_header .container_nav a.logo_mobile { display: none; margin: 4px 0 0 12px;}
+header.main_header .container_nav a.logo_mobile img { height: 54px; }
 header.main_header a.logo img { float: left;}
-header.main_header a.logo p, header a.logo h1 { float: left; margin: 0; padding-left: 16px; line-height: 63px; font: 400 24px/63px 'Josefin Sans', sans-serif; color: #003C0C; text-transform: uppercase;}
+header.main_header a.logo p, 
+header a.logo h1 { float: left; margin: 0; padding-left: 16px; line-height: 63px; font: 400 24px/63px 'Josefin Sans', sans-serif; color: #003C0C; text-transform: uppercase;}
 header.main_header .social { float: right;}
 header.main_header .social p { margin: 0; font-size: 14px;}
 header.main_header .social p i { padding-right: 6px;}
@@ -57,7 +60,7 @@ header.main_header .search_form input:focus::-moz-placeholder { opacity: 0; -moz
 header.main_header .search_form input:focus:-moz-placeholder { opacity: 0; -moz-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
 header.main_header .search_form input:focus:-ms-input-placeholder { opacity: 0; -ms-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
 header.main_header #main_menu {}
-header.main_header #main_menu ul {}
+header.main_header #main_menu ul { position: relative;}
 header.main_header #main_menu ul:after { content: ' '; display: block; clear: both;}
 header.main_header #main_menu ul li { float: left; display: inline-block; position: relative; height: 50px;}
 header.main_header #main_menu ul li:after { content: ' '; display: block; position: absolute; top: 0; right: 0; height: 50px; border-left: 1px solid #014910; border-left-style: ridge; } 
@@ -75,6 +78,40 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
 @-webkit-keyframes fadeOutUp { from { opacity: 1;} to { opacity: 0; -webkit-transform: translate3d(0, -100%, 0); transform: translate3d(0, -100%, 0);}}
 @keyframes fadeOutUp { from { opacity: 1;} to { opacity: 0; -webkit-transform: translate3d(0, -100%, 0); transform: translate3d(0, -100%, 0);}}
 
+.nav-opener { display: none; position: absolute; top: 23px; right: 15px; width: 18px; height: 15px; border-radius: 0px; background: transparent;}
+.nav-opener:before, .nav-opener:after, .nav-opener span { position: absolute; top: 0; left: 0; right: 0; height: 3px; border-radius: 0px; background: #181818; transition: all 0.3s linear;}
+.nav-opener:before { content:''; top: 6px;}
+.nav-opener:after { content:''; top: 12px;}
+.nav-opener:hover { opacity: 0.9;}
+.nav-opener.nav-active:before { top: 6px; left: 0; right: 0; transform: rotate(45deg);}
+.nav-opener.nav-active:after { top: 6px; left: 0; right: 0; transform: rotate(-45deg);}
+.nav-opener.nav-active span { opacity: 0;}
+@media (max-width: 1199px) {
+	header.main_header .social p { display: none;}
+	header.main_header .social select { margin-top: 36px;}
+	header.main_header .social ul { margin-top: 40px;}
+}
+@media (max-width: 992px) {
+	header.main_header .container_nav a.logo h2 { font-size: 14px;}
+}
+@media (max-width: 900px) {
+	header.main_header .search_form input { width: 110px;}
+	header.main_header .container_nav a.logo h2 { display: none;}
+}
+@media (max-width: 800px){
+	.container_inner { padding: 0;}
+  	.nav-opener { display: block;}
+  	header.main_header .header_top { display: none;}
+  	header.main_header .container_nav { background: #fff;}
+  	header.main_header .container_nav a.logo_mobile { display: inline-block;} 	
+  	header.main_header .search_form { display: none; margin-right: 81px;}
+  	header.main_header #main_menu ul { display: none;}
+  	header.main_header #main_menu ul li { float: none; display: list-item; height: 64px; border-top: 1px solid #D5D5D5;}
+  	header.main_header #main_menu ul li:after { display: none;}
+  	header.main_header #main_menu ul li a { padding: 22px 0 22px 12px; color: #424242; line-height: 64px;}
+
+  	
+}
 
 .main_image { background: #fff url(../img/main_image.png) center center no-repeat; background-size: cover; background-attachment: fixed;}
 .main_image .image_text { float: right; max-width: 567px; margin: 100px 0 124px;
