@@ -60,12 +60,14 @@ header.main_header .search_form input:focus::-moz-placeholder { opacity: 0; -moz
 header.main_header .search_form input:focus:-moz-placeholder { opacity: 0; -moz-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
 header.main_header .search_form input:focus:-ms-input-placeholder { opacity: 0; -ms-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
 header.main_header #main_menu {}
-header.main_header #main_menu ul { position: relative;}
+header.main_header #main_menu ul {}
 header.main_header #main_menu ul:after { content: ' '; display: block; clear: both;}
 header.main_header #main_menu ul li { float: left; display: inline-block; position: relative; height: 50px;}
 header.main_header #main_menu ul li:after { content: ' '; display: block; position: absolute; top: 0; right: 0; height: 50px; border-left: 1px solid #014910; border-left-style: ridge; } 
 header.main_header #main_menu ul li:last-child:after { border-left: none;}
-header.main_header #main_menu ul li a { padding: 15px 30px 16px; font-size: 14px; color: #fff;  line-height: 50px; text-transform: uppercase;}
+header.main_header #main_menu ul li a { padding: 15px 30px 16px; font-size: 14px; color: #fff;  line-height: 50px; text-transform: uppercase; -webkit-transition: background 0.3s ease; -moz-transition: background 0.3s ease; -o-transition: background 0.3s ease; transition: background 0.3s ease;}
+header.main_header #main_menu ul li a:hover,
+header.main_header #main_menu ul li a:active { background: #045316; -webkit-transition: background 0.3s ease; -moz-transition: background 0.3s ease; -o-transition: background 0.3s ease; transition: background 0.3s ease;}
 header.main_header.fixed .header_top,
 header.main_header.fixed .search_form { display: none;}
 header.main_header.fixed .container_nav a.logo { display: block;}
@@ -101,19 +103,26 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
 @media (max-width: 800px){
 	.container_inner { padding: 0;}
   	.nav-opener { display: block;}
-  	header.main_header .header_top { display: none;}
+  	header.main_header a.logo img { display: none;}
+  	/*header.main_header .header_top { display: none;}*/
+  	header.main_header .header_top a.logo { display: none;}
+  	header.main_header .header_top .social p { display: none;}
+  	header.main_header .header_top .social ul { display: none;}
+  	header.main_header .header_top .social select { position: absolute; top: 15px; right: 50px; margin-top: 0; z-index: 1;}
   	header.main_header .container_nav { background: #fff;}
   	header.main_header .container_nav a.logo_mobile { display: inline-block;} 	
   	header.main_header .search_form { display: none; margin-right: 81px;}
-  	header.main_header #main_menu ul { display: none;}
+  	header.main_header #main_menu ul { display: none; /*position: relative;*/}
   	header.main_header #main_menu ul li { float: none; display: list-item; height: 64px; border-top: 1px solid #D5D5D5;}
+  	header.main_header #main_menu ul li:last-child { border-bottom: 1px solid #D5D5D5;}
   	header.main_header #main_menu ul li:after { display: none;}
-  	header.main_header #main_menu ul li a { padding: 22px 0 22px 12px; color: #424242; line-height: 64px;}
-
-  	
+  	header.main_header #main_menu ul li a { display: block; padding: 0 0 0 12px; color: #424242; line-height: 64px;}
+  	header.main_header #main_menu ul li a:hover,
+  	header.main_header #main_menu ul li a:active { background: transparent;}
+  	header.main_header.fixed #main_menu ul { float: none;} 	
 }
 
-.main_image { background: #fff url(../img/main_image.png) center center no-repeat; background-size: cover; background-attachment: fixed;}
+.main_image { min-height: 220px; background: #fff url(../img/main_image.png) center center no-repeat; background-size: cover; background-attachment: fixed;}
 .main_image .image_text { float: right; max-width: 567px; margin: 100px 0 124px;
 	background: rgba(10,102,29,1.0);
 	background: -moz-linear-gradient(left, rgba(10,102,29,0.52) 0%, rgba(10,102,29,0.86) 25%, rgba(10,102,29,1) 50%, rgba(10,102,29,1) 100%);
@@ -123,29 +132,47 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
 }
 .main_image .image_text:after { content: ' '; display: block; clear: both;}
 .main_image .image_text p { margin: 0; padding: 32px 42px; font: 24px/36px 'Roboto', sans-serif; color: #fff; background: url(../img/main_image_backrico.png) right bottom no-repeat;}
+@media (max-width: 800px){
+	.main_image { background-attachment: inherit;}
+	.main_image .image_text { display: none;}
+}
 
-.about_us { position: relative; padding: 91px 0 64px; text-align: center; background: #fff;}
-.about_us p { margin-bottom: 24px; text-indent: 12px;}
-.about_us h2 { margin-bottom: 32px; line-height: 1;}
+.about_us { position: relative; padding: 91px 0 64px; background: #fff;}
+.about_us p { margin-bottom: 24px; text-align: center; /*text-indent: 12px;*/}
+.about_us h2 { margin-bottom: 32px; text-align: center; line-height: 1;}
 .about_us h2 + p { font-size: 20px; line-height: 32px;}
-.about_us h4 { margin: 74px 0 15px; font-size: 24px; font-weight: 700;}
+.about_us h4 { margin: 74px 0 15px; font-size: 24px; font-weight: 700; text-align: center;}
 .about_us h4:before { content: ' '; display: block; position: absolute; left: 50%; width: 14px; height: 14px; margin-left: -7px; margin-top: -44px; border-radius: 50%; background-color: #C6C6C6;}
 .about_us h4:after { content: ' '; display: block; position: absolute; left: 50%; width: 160px; height: 1px; margin-left: -80px; margin-top: -71px;background-color: #C6C6C6;}
 .about_us .img {}
-.about_us .img img { padding: 12px 42px; vertical-align: middle;}
+.about_us .img img { padding: 12px 42px; vertical-align: middle; text-align: center;}
+@media (max-width: 800px){
+	.about_us { padding: 28px 0 54px;}
+	.about_us p, .about_us h2, .about_us h4 { padding: 0 12px;}
+	.about_us .img img { width: 36%; margin: 0 6%; padding: 12px 22px; text-align: justify;}
+	
+}
 
 #what_we_offer { padding: 91px 0 26px; text-align: center; background: #FAFAFA;}
 #what_we_offer h2 { margin-bottom: 52px; line-height: 1;}
-#what_we_offer .offer_item { float: left; width: 30%; margin-bottom: 38px;}
+#what_we_offer .offer_item { float: left; width: 30%; margin-bottom: 38px; /*line-height: 300px*/}
 #what_we_offer .offer_item h4 { margin: 15px 0 0 0;}
 #what_we_offer .offer_item p { margin-top: 8px; padding: 0 18px;}
 .left-5 { margin-left: 5%;}
 .left-10 { margin-left: 10%;}
 .left-15 { margin-left: 15%;}
+@media (max-width: 800px){
+	#what_we_offer { padding: 58px 0 26px;}
+	#what_we_offer .offer_item { float: none; width: 100%; text-align: left;}
+	#what_we_offer .offer_item:after { content: ' '; display: block; clear: both;}
+	#what_we_offer .offer_item img { float: left; margin: 0 24px 0 12px; vertical-align: middle;}
+	#what_we_offer .offer_item h4, #what_we_offer .offer_item p { padding-left: 167px;}
+	.left-5, .left-10, .left-15 { margin-left: 0;} 
+}
 
 #documentation { padding: 91px 0 89px; text-align: center; background: #fff;}
 #documentation h2 { margin-bottom: 32px; line-height: 1;}
-#documentation h2 + p { font-size: 20px; line-height: 32px; text-indent: 12px;}
+#documentation h2 + p { font-size: 20px; line-height: 32px; /*text-indent: 12px;*/}
 #documentation .accordion { position: relative;}
 #documentation .accordion .accord_item { margin-top: 70px;}
 #documentation .accordion .accord_item:after { content: ' '; display:block; position: absolute; left: 0; width: 100%; height: 1px; margin-top: 34px; background-color: #C6C6C6;}
@@ -161,7 +188,7 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
 
 #contacts { padding: 81px 0 64px; text-align: center; background: #FAFAFA;}
 #contacts h2 { margin-bottom: 32px; line-height: 1;}
-#contacts h2 + p { font-size: 20px; line-height: 32px; text-indent: 12px;}
+#contacts h2 + p { font-size: 20px; line-height: 32px; /*text-indent: 12px;*/}
 #contacts .contact_img { float: left; width: 25%; margin-top: 27px; text-align: left;}
 #contacts .contact_data { float: left; width: 35%; margin-top: 27px; padding: 0 8px 0 28px;}
 #contacts .contact_data p { margin: 6px 0; padding: 0 8px 0 8px; text-align: left; line-height: 1.3;}

@@ -46,6 +46,17 @@ $(document).ready(function() {
           $('header.main_header').removeClass('fixed_in').removeClass('fixed_out').removeClass('fixed');
           $('.main_image').css('margin-top','0px');
       }
+      if ( ($(this).scrollTop() > 284) && ($('header.main_header').width() < 784) ) {
+          $('header.main_header').removeClass('fixed_out').addClass('fixed').addClass('fixed_in');
+          $('.main_image').css('margin-top','64px');
+      } else 
+      if ( ($(this).scrollTop() <= 284) && ($(this).scrollTop() > 64) && ($('header.main_header').width() < 784) ) {
+          $('header.main_header').removeClass('fixed_in').addClass('fixed_out');  
+      }
+      if ( ($(this).scrollTop() <= 64) && ($('header.main_header').width() < 784) ) {
+          $('header.main_header').removeClass('fixed_in').removeClass('fixed_out').removeClass('fixed');
+          $('.main_image').css('margin-top','0px');
+      }
     });
 
 //mobile menu button
