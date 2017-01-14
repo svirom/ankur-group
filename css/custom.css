@@ -85,13 +85,8 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
 .nav-opener:before { content:''; top: 6px;}
 .nav-opener:after { content:''; top: 12px;}
 .nav-opener:hover { opacity: 0.9;}
-<<<<<<< HEAD
 .nav-opener.nav-active:before { top: 6px; left: 0; right: 0; -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg);}
 .nav-opener.nav-active:after { top: 6px; left: 0; right: 0; -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg);}
-=======
-.nav-opener.nav-active:before { top: 6px; left: 0; right: 0; -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg);}
-.nav-opener.nav-active:after { top: 6px; left: 0; right: 0; -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg);}
->>>>>>> 7b37691a4ba5ec848f94a620ac3c6896b62770a1
 .nav-opener.nav-active span { opacity: 0;}
 @media (max-width: 1199px) {
 	header.main_header .social p { display: none;}
