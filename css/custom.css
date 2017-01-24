@@ -5,6 +5,8 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Josefin Sans', sans-serif;
 ;
 */
+
+/*-----------------CSS reset-------------------*/
 * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 body { margin: 0; border: 0; padding: 0; outline: 0; vertical-align: baseline; background: transparent; font: normal 400 16px/24px 'Open Sans', sans-serif; color: #424242;-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 input, button, textarea { -webkit-appearance: none; outline: none;}
@@ -12,6 +14,7 @@ h1, h2, h3, h4, h5, h6 { font-weight:normal;}
 ol, ul, li { list-style: none; margin: 0; padding: 0;}
 img { max-width: 100%; border: none; outline: none;}
 a, a:link, a:visited { color: #0264a9; font-weight: normal; text-decoration: none; outline: none;}
+/*----------------- End CSS reset-------------------*/
 
 /*p { margin: 48px 0px;}*/
 h2 { margin: 0; font: 41px 'Roboto', sans-serif; color: #424242;}
@@ -28,6 +31,7 @@ h4 { font: 22px 'Open Sans', sans-serif; color: #424242;}
 	background: linear-gradient(to bottom, rgba(0,93,19,0.76) 0%, rgba(0,93,19,1) 100%);
 }
 
+/*-----------------Header section-------------------*/
 header.main_header a.logo { float: left; margin: 16px 0 12px;}
 header.main_header .container_nav a.logo { display: none; float: left; margin: 0;}
 header.main_header .container_nav a.logo h2 { float: left; margin: 0; padding-left: 16px; font: 400 16px/52px 'Josefin Sans', sans-serif; color: #fff; text-transform: uppercase;}
@@ -121,7 +125,9 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
   	header.main_header #main_menu ul li a:active { background: transparent;}
   	header.main_header.fixed #main_menu ul { float: none;} 	
 }
+/*-----------------End Header section-------------------*/
 
+/*-----------------Main Image section-------------------*/
 .main_image { min-height: 220px; background: #fff url(../img/main_image.png) center center no-repeat; background-size: cover; background-attachment: fixed;}
 .main_image .image_text { float: right; max-width: 567px; margin: 100px 0 124px;
 	background: rgba(10,102,29,1.0);
@@ -136,7 +142,9 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
 	.main_image { background-attachment: inherit;}
 	.main_image .image_text { display: none;}
 }
+/*-----------------End Main Image section-------------------*/
 
+/*-----------------About Us section-------------------*/
 .about_us { position: relative; padding: 91px 0 64px; background: #fff;}
 .about_us p { margin-bottom: 24px; text-align: center; /*text-indent: 12px;*/}
 .about_us h2 { margin-bottom: 32px; text-align: center; line-height: 1;}
@@ -147,12 +155,13 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
 .about_us .img {}
 .about_us .img img { padding: 12px 42px; vertical-align: middle; text-align: center;}
 @media (max-width: 800px){
-	.about_us { padding: 28px 0 54px;}
-	.about_us p, .about_us h2, .about_us h4 { padding: 0 12px;}
-	.about_us .img img { width: 36%; margin: 0 6%; padding: 12px 22px; text-align: justify;}
-	
+	.about_us { padding: 28px 12px 54px;}
+	.about_us p, .about_us h2, .about_us h4 { padding: 0;}
+	.about_us .img img { width: 36%; margin: 0 6%; padding: 12px 10px; text-align: justify;}
 }
+/*-----------------End About Us section-------------------*/
 
+/*-----------------What We Offer section-------------------*/
 #what_we_offer { padding: 91px 0 26px; text-align: center; background: #FAFAFA;}
 #what_we_offer h2 { margin-bottom: 52px; line-height: 1;}
 #what_we_offer .offer_item { float: left; width: 30%; margin-bottom: 38px; /*line-height: 300px*/}
@@ -162,14 +171,16 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
 .left-10 { margin-left: 10%;}
 .left-15 { margin-left: 15%;}
 @media (max-width: 800px){
-	#what_we_offer { padding: 58px 0 26px;}
+	#what_we_offer { padding: 58px 12px 26px;}
 	#what_we_offer .offer_item { float: none; width: 100%; text-align: left;}
 	#what_we_offer .offer_item:after { content: ' '; display: block; clear: both;}
-	#what_we_offer .offer_item img { float: left; margin: 0 24px 0 12px; vertical-align: middle;}
-	#what_we_offer .offer_item h4, #what_we_offer .offer_item p { padding-left: 167px;}
+	#what_we_offer .offer_item img { float: left; margin: 0 24px 0 0; vertical-align: middle;}
+	#what_we_offer .offer_item h4, #what_we_offer .offer_item p { padding-left: 155px;}
 	.left-5, .left-10, .left-15 { margin-left: 0;} 
 }
+/*-----------------End What We Offer section-------------------*/
 
+/*-----------------Documentation section-------------------*/
 #documentation { padding: 91px 0 89px; text-align: center; background: #fff;}
 #documentation h2 { margin-bottom: 32px; line-height: 1;}
 #documentation h2 + p { font-size: 20px; line-height: 32px; /*text-indent: 12px;*/}
@@ -185,7 +196,13 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
 #documentation .accordion .accord_item .accord_content:after { content: ' '; display: block; clear: both;}
 #documentation .accordion .accord_item .accord_content img { float: left; width: 23.5%; margin-left: 2%;}
 #documentation .accordion .accord_item .accord_content img:first-child { margin-left: 0;}
+@media (max-width: 800px){
+	#documentation { padding: 58px 12px 26px;}
+	#documentation p, #documentation h2, #documentation .accordion { padding: 0;}	
+}
+/*-----------------End Documentation section-------------------*/
 
+/*-----------------Contacts section-------------------*/
 #contacts { padding: 81px 0 64px; text-align: center; background: #FAFAFA;}
 #contacts h2 { margin-bottom: 32px; line-height: 1;}
 #contacts h2 + p { font-size: 20px; line-height: 32px; /*text-indent: 12px;*/}
@@ -223,16 +240,45 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
 #contacts .contact_form form textarea:focus:-moz-placeholder { opacity: 0; -moz-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
 #contacts .contact_form form input:focus:-ms-input-placeholder,
 #contacts .contact_form form textarea:focus:-ms-input-placeholder { opacity: 0; -ms-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+@media (max-width: 800px){
+	#contacts { padding: 58px 12px 46px;}
+	#contacts p, #contacts h2 { padding: 0;}
+	#contacts h2 + p { margin-bottom: 40px;}
+	#contacts .contact_img { display: none;}
+	#contacts .contact_data { float: none; width: 100%; padding: 0;}
+	#contacts .contact_data p { text-align: center;}
+	#contacts .contact_data p:last-child { max-width: 336px; margin: 32px auto 16px;}	
+	#contacts .contact_form { float: none; width: 100%; padding: 0;}
+}
+/*-----------------End Contacts section-------------------*/
 
+/*-----------------Articles section-------------------*/
 #articles { padding: 81px 0 67px; background: #fff;}
 #articles h2 { margin-bottom: 34px; text-align: center; line-height: 1;}
 #articles article { float: left; width: 23.5%; margin-right: 2%;}
 #articles article:last-of-type { margin-right: 0;}
 #articles article:nth-of-type(4n) { margin-right: 0;}
+#articles article img { width: 100%;}
 #articles article h4 { margin: 12px 0 0;}
 #articles article h4 + p { margin: 6px 0 24px;}
-#articles a { float: right; position: relative; padding-right: 25px; color: #3B994E; text-transform: uppercase;}
-#articles a i { position: absolute; right: 0; top: 4px;}
+#articles .more_articles a { float: right; position: relative; padding-right: 25px; color: #3B994E; text-transform: uppercase;}
+#articles .more_articles a i { position: absolute; right: 0; top: 4px;}
+@media (max-width: 800px){
+	#articles { padding: 58px 12px 46px;}
+	#articles article { float: none; width: 100%; margin-bottom: 30px;}
+	#articles article:after { content: ' '; display: block; clear: both;}
+	#articles article img { float: left; max-width: 192px; margin-right: 12px;}
+	#articles .more_articles { width: 120px; margin: 0 auto;}
+	#articles .more_articles a { float: none; padding-right: 0;}
+	#articles .more_articles a i { display: none;}
+}
+/*-----------------End Articles section-------------------*/
 
+/*-----------------Footer section-------------------*/
 footer .main_footer { padding: 30px 0 21px; color: #fff; text-align: center; text-transform: uppercase; background: #AAAFAB;}
 footer .main_footer p { margin: 0;}
+@media (max-width: 800px){
+	footer .main_footer { padding: 16px 0 15px;}
+	footer .main_footer p { font-size: 14px; line-height: 14px;}
+}
+/*-----------------End Footer section-------------------*/
