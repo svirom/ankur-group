@@ -44,7 +44,7 @@ header a.logo h1 { float: left; margin: 0; padding-left: 16px; line-height: 63px
 header.main_header .social { float: right;}
 header.main_header .social p { margin: 0; font-size: 14px;}
 header.main_header .social p i { padding-right: 6px;}
-header.main_header .social select { float: right; width:80px; margin-top: 12px; padding-left: 15px; border: 0; font: 16px/34px 'Open Sans', sans-serif; color: #424242; outline:none; background: #FBFBFB url(../img/select_arrow.png) 57px center no-repeat; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
+header.main_header .social select { float: right; width: 80px; margin-top: 12px; padding-left: 15px; border: 0; font: 16px/34px 'Open Sans', sans-serif; color: #424242; outline:none; background: #FBFBFB url(../img/select_arrow.png) 57px center no-repeat; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
 header.main_header .social ul { float: right; margin: 16px 30px 0 0;}
 header.main_header .social ul li { display: inline-block; margin-right: 12px;}
 header.main_header .social ul li:last-child { margin-right: 0;}
@@ -55,6 +55,8 @@ header.main_header .search_form input, header .search_form button { float: left;
 header.main_header .search_form input { width: 180px; padding: 4px 0 4px 14px;}
 header.main_header .search_form button { background: #fff;}
 header.main_header .search_form button>i { color: #424242; font-size: 16px;}
+header.main_header button.search_switch { display: none; background: #fff;}
+header.main_header button.search_switch>i { color: #424242; font-size: 18px;}
 header.main_header .search_form input::-webkit-input-placeholder { font: 14px 'Open Sans', sans-serif; color: #424242; opacity: 1; -webkit-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
 header.main_header .search_form input::-moz-placeholder { font: 14px 'Open Sans', sans-serif; color: #424242; opacity: 1; -moz-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
 header.main_header .search_form input:-moz-placeholder { font: 14px 'Open Sans', sans-serif; color: #424242; opacity: 1; -moz-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
@@ -115,7 +117,10 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
   	header.main_header .header_top .social select { position: absolute; top: 15px; right: 50px; margin-top: 0; z-index: 1;}
   	header.main_header .container_nav { background: #fff;}
   	header.main_header .container_nav a.logo_mobile { display: inline-block;} 	
-  	header.main_header .search_form { display: none; margin-right: 81px;}
+  	header.main_header .search_form { /*display: none;width:0; height:0;*/ margin: 17px; margin-right: 170px;  border: 0px solid #ddd;}
+  	header.main_header .search_form input { width: 0;} 
+  	header.main_header .search_form button { display: none;}
+  	header.main_header button.search_switch { display: block; position: absolute; top: 22px; right: 140px; border: transparent;}
   	header.main_header #main_menu ul { display: none; /*position: relative;*/}
   	header.main_header #main_menu ul li { float: none; display: list-item; height: 64px; border-top: 1px solid #D5D5D5;}
   	header.main_header #main_menu ul li:last-child { border-bottom: 1px solid #D5D5D5;}
