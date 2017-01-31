@@ -76,7 +76,8 @@ $(document).ready(function() {
     });
 
 //search button on mobile menu
-    $('button.search_switch').click(function(){
+    
+    /*$('button.search_switch').click(function(){
       if ($(this).hasClass('clicked')) { 
           $(this).prev('div').find('input').animate({'width' : '0'}, 400);
           $(this).prev('div').css('border-width','0').find('button').css('display','none');
@@ -86,7 +87,21 @@ $(document).ready(function() {
         $(this).prev('div').css('border-width','1').find('button').css('display','block');
         $(this).addClass('clicked').find('i').replaceWith('<i class="fa fa-times"></i>');
       }
-    });
+    });*/
+
+    $('button.search_switch').click(button_search);
+    
+    function button_search(){
+      if ($(this).hasClass('clicked')) { 
+          $(this).prev('div').find('input').animate({'width' : '0'}, 400);
+          $(this).prev('div').css('border-width','0').find('button').css('display','none');
+          $(this).removeClass('clicked').find('i').replaceWith('<i class="fa fa-search"></i>');
+      } else {
+          $(this).prev('div').find('input').css('display','block').animate({'width' : '120'}, 400);
+          $(this).prev('div').css('border-width','1').find('button').css('display','block');
+          $(this).addClass('clicked').find('i').replaceWith('<i class="fa fa-times"></i>');
+        } 
+    }
 
 
     
