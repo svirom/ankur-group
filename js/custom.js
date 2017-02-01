@@ -94,12 +94,14 @@ $(document).ready(function() {
     function button_search(){
       if ($(this).hasClass('clicked')) { 
           $(this).prev('div').find('input').animate({'width' : '0'}, 400);
-          $(this).prev('div').css('border-width','0').find('button').css('display','none');
-          $(this).removeClass('clicked').find('i').replaceWith('<i class="fa fa-search"></i>');
+          $(this).prev('div').css('border-width','0').animate({'marginRight' : '170'}, 400).find('button').css('display','none');
+          $(this).removeClass('clicked').animate({'right' : '140'}, 400).find('i').replaceWith('<i class="fa fa-search"></i>');
+          $('.social select').animate({'width': '80', 'paddingLeft': '15'}, 400);
       } else {
           $(this).prev('div').find('input').css('display','block').animate({'width' : '120'}, 400);
-          $(this).prev('div').css('border-width','1').find('button').css('display','block');
-          $(this).addClass('clicked').find('i').replaceWith('<i class="fa fa-times"></i>');
+          $(this).prev('div').css('border-width','1').animate({'marginRight' : '70'}, 400).find('button').css('display','block');
+          $(this).addClass('clicked').animate({'right' : '40'}, 400).find('i').replaceWith('<i class="fa fa-times"></i>');
+          $('.social select').animate({'width': '0', 'paddingLeft': '0'}, 400);
         } 
     }
 

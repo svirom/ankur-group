@@ -117,9 +117,10 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
   	header.main_header .header_top .social select { position: absolute; top: 15px; right: 50px; margin-top: 0; z-index: 1;}
   	header.main_header .container_nav { background: #fff;}
   	header.main_header .container_nav a.logo_mobile { display: inline-block;} 	
-  	header.main_header .search_form { /*display: none;width:0; height:0;*/ margin: 17px; margin-right: 170px;  border: 0px solid #ddd;}
+  	header.main_header .search_form { margin: 17px 170px 17px 0; margin-right: 170px;  border: 0px solid #ddd;}
   	header.main_header .search_form input { width: 0;} 
   	header.main_header .search_form button { display: none;}
+  	header.main_header.fixed .search_form { display: block;}
   	header.main_header button.search_switch { display: block; position: absolute; top: 22px; right: 140px; border: transparent;}
   	header.main_header #main_menu ul { display: none; /*position: relative;*/}
   	header.main_header #main_menu ul li { float: none; display: list-item; height: 64px; border-top: 1px solid #D5D5D5;}
