@@ -176,6 +176,27 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
 .left-5 { margin-left: 5%;}
 .left-10 { margin-left: 10%;}
 .left-15 { margin-left: 15%;}
+#what_we_offer .offer_item_inner { position: absolute; top: 168px; left: 100%; width: 100%; max-width: 1100px; text-align: left; background: #FAFAFA;}
+#what_we_offer .offer_item_inner .breadcrumb p { font-size: 22px;}
+#what_we_offer .offer_item_inner .breadcrumb p a { position: relative; margin-right: 10px; padding-left: 7px; font-size: 12px; color: #0D681F; }
+#what_we_offer .offer_item_inner .breadcrumb p a i { position: absolute; left: 0; top: 3px; -moz-transform: scaleX(1.5); -ms-transform: scaleX(1.5); -webkit-transform: scaleX(1.5); -o-transform: scaleX(1.5); transform: scaleX(1.5);}
+#what_we_offer .offer_item_inner .tab_list ul { border-top: 1px solid #D5D5D5; border-bottom: 1px solid #D5D5D5;}
+#what_we_offer .offer_item_inner .tab_list ul:after { content: ' '; display: block; clear: both;}
+#what_we_offer .offer_item_inner .tab_list ul li { float: left; height: 50px; text-align: center;}
+#what_we_offer .offer_item_inner .tab_list ul li a { display: block; position: relative; padding: 13px 20px; border-left: 1px solid #E6E6E6; border-right: 1px solid transparent; color: #424242; text-transform: uppercase;}
+#what_we_offer .offer_item_inner .tab_list ul li:first-child a { border-left: 1px solid transparent;}
+#what_we_offer .offer_item_inner .tab_list ul li.active a,
+#what_we_offer .offer_item_inner .tab_list ul li a:hover { background: #F5F5F5;}
+#what_we_offer .offer_item_inner .tab_list ul li.active a:after,
+#what_we_offer .offer_item_inner .tab_list ul li a:hover:after { content: ' '; display: block; position: absolute; left: 50%; top: 100%; margin-top:-1px; margin-left: -7px; width: 0; height: 0; border-style: solid; border-width: 8px 7px 0 7px; border-color: #F5F5F5 transparent transparent transparent;}
+#what_we_offer .offer_item_inner .tab_list ul li.active a:before,
+#what_we_offer .offer_item_inner .tab_list ul li a:hover:before { content: ' '; display: block; position: absolute; left: 50%; top: 100%; margin-left: -7px; width: 0; height: 0; border-style: solid; border-width: 8px 7px 0 7px; border-color: #D5D5D5 transparent transparent transparent;}
+#what_we_offer .offer_item_inner .tab_panels>div { display: none; padding-top: 18px;}
+#what_we_offer .offer_item_inner .tab_panels>div:first-of-type { display: block;}
+#what_we_offer .offer_item_inner .tab_panels p { font-size: 22px;}
+#what_we_offer .offer_item_inner .tab_panels ul li:before { padding-right: 12px; content: "\f105"; font: 14px FontAwesome; color: #0D681F;}
+#what_we_offer .offer_item_inner .tab_panels ul {}
+#what_we_offer .offer_item_inner .tab_panels ul li { color: #0D681F;}
 @media (max-width: 800px){
 	#what_we_offer { padding: 58px 12px 26px;}
 	#what_we_offer .offer_item { float: none; width: 100%; text-align: left;}

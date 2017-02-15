@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 
 //smooth scroll to anchor "#"
-	$('a[href^="#"]').bind('click.smoothscroll',function (e) {
+	$('#main_menu a[href^="#"]').bind('click.smoothscroll',function (e) {
 	 e.preventDefault();
 	 
 	var target = this.hash,
@@ -90,7 +90,6 @@ $(document).ready(function() {
     });*/
 
     $('button.search_switch').click(button_search);
-    
     function button_search(){
       if ($(this).hasClass('clicked')) { 
           $(this).prev('div').find('input').animate({'width' : '0'}, 400);
@@ -103,6 +102,15 @@ $(document).ready(function() {
           $(this).addClass('clicked').animate({'right' : '40'}, 400).find('i').replaceWith('<i class="fa fa-times"></i>');
           $('.social select').animate({'width': '0', 'paddingLeft': '0'}, 400);
         } 
+    }
+
+    $('.tab_list a[href^="#"]').click(tabs);
+    function tabs(){
+      event.preventDefault();
+      $('.tab_list li').removeClass('active');
+      $(this).closest('li').addClass('active');
+      $('.tab_panels>div').css('display','none');
+      $(this.hash).fadeIn(500);
     }
 
 
