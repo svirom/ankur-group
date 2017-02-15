@@ -106,10 +106,14 @@ $(document).ready(function() {
 
     $('.tab_list a[href^="#"]').click(tabs);
     function tabs(){
+      var t = $(this);
       event.preventDefault();
-      $('.tab_list li').removeClass('active');
-      $(this).closest('li').addClass('active');
-      $('.tab_panels>div').css('display','none');
+      //$('.tab_list li').removeClass('active');
+      //$(this).closest('li').addClass('active');
+      t.closest('ul').find('li').removeClass('active');
+      t.closest('li').addClass('active');
+      //$('.tab_panels>div').css('display','none');
+      t.closest('.tab_list').next('.tab_panels').find('div').css('display','none');
       $(this.hash).fadeIn(500);
     }
 
