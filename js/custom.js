@@ -70,7 +70,8 @@ $(document).ready(function() {
     $(window).resize(function() {
       if ($('body').width() < 784)
           $('nav#main_menu>ul').css("display","none");
-          $('a.nav-opener').removeClass('nav-active'); 
+          $('a.nav-opener').removeClass('nav-active');
+          $('.offer_item_inner').css('display' , 'none');
       if ($('body').width() >= 784)
           $('nav#main_menu>ul').css("display","block");
     });
@@ -104,6 +105,21 @@ $(document).ready(function() {
         } 
     }
 
+//what we offer item
+    $('.offer_item').click(function(){
+      if ($('body').width() >= 784) {
+        $('.offer_item_inner').css({'left':'100%', 'display' : 'block'});
+        $(this).next('.offer_item_inner').animate({ 'left':'0%'}, 500);
+      } else {
+        $(this).next('.offer_item_inner').slideToggle(500);
+      }
+    });
+    $('.offer_item_inner .breadcrumb a').click(function(){
+      event.preventDefault();
+      $(this).closest('.offer_item_inner').animate({ 'left':'100%'}, 500);
+    });
+
+//tab panel in what we offer section
     $('.tab_list a[href^="#"]').click(tabs);
     function tabs(){
       var t = $(this);
@@ -113,7 +129,7 @@ $(document).ready(function() {
       t.closest('ul').find('li').removeClass('active');
       t.closest('li').addClass('active');
       //$('.tab_panels>div').css('display','none');
-      t.closest('.tab_list').next('.tab_panels').find('div').css('display','none');
+      t.closest('.tab_list').next('.tab_panels').children('div').css('display','none');
       $(this.hash).fadeIn(500);
     }
 

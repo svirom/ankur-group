@@ -169,14 +169,16 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
 
 /*-----------------What We Offer section-------------------*/
 #what_we_offer { padding: 91px 0 26px; text-align: center; background: #FAFAFA;}
+#what_we_offer .container_inner { position: relative; overflow: hidden;}
 #what_we_offer h2 { margin-bottom: 52px; line-height: 1;}
-#what_we_offer .offer_item { float: left; width: 30%; margin-bottom: 38px; /*line-height: 300px*/}
+#what_we_offer .offer_item { float: left; width: 30%; margin-bottom: 38px; padding-top: 3px; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease;}
+#what_we_offer .offer_item:hover { cursor: pointer; -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.8); -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.8); box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.8); -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease;}
 #what_we_offer .offer_item h4 { margin: 15px 0 0 0;}
 #what_we_offer .offer_item p { margin-top: 8px; padding: 0 18px;}
 .left-5 { margin-left: 5%;}
 .left-10 { margin-left: 10%;}
 .left-15 { margin-left: 15%;}
-#what_we_offer .offer_item_inner { position: absolute; top: 168px; left: 100%; width: 100%; max-width: 1100px; text-align: left; background: #FAFAFA;}
+#what_we_offer .offer_item_inner { position: absolute; top: 60px; left: 100%; width: 100%; max-width: 1100px; min-height: 780px; text-align: left; background: #FAFAFA;}
 #what_we_offer .offer_item_inner .breadcrumb p { font-size: 22px;}
 #what_we_offer .offer_item_inner .breadcrumb p a { position: relative; margin-right: 10px; padding-left: 7px; font-size: 12px; color: #0D681F; }
 #what_we_offer .offer_item_inner .breadcrumb p a i { position: absolute; left: 0; top: 3px; -moz-transform: scaleX(1.5); -ms-transform: scaleX(1.5); -webkit-transform: scaleX(1.5); -o-transform: scaleX(1.5); transform: scaleX(1.5);}
@@ -193,17 +195,24 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
 #what_we_offer .offer_item_inner .tab_list ul li a:hover:before { content: ' '; display: block; position: absolute; left: 50%; top: 100%; margin-left: -7px; width: 0; height: 0; border-style: solid; border-width: 8px 7px 0 7px; border-color: #D5D5D5 transparent transparent transparent;}
 #what_we_offer .offer_item_inner .tab_panels>div { display: none; padding-top: 18px;}
 #what_we_offer .offer_item_inner .tab_panels>div:first-of-type { display: block;}
-#what_we_offer .offer_item_inner .tab_panels p { font-size: 22px;}
-#what_we_offer .offer_item_inner .tab_panels ul li:before { padding-right: 12px; content: "\f105"; font: 14px FontAwesome; color: #0D681F;}
-#what_we_offer .offer_item_inner .tab_panels ul {}
-#what_we_offer .offer_item_inner .tab_panels ul li { color: #0D681F;}
+#what_we_offer .offer_item_inner .tab_panels>div:after { content: ' '; display: block; clear: both;}
+#what_we_offer .offer_item_inner .tab_panels .panel_part { float: left; width: 25%;}
+#what_we_offer .offer_item_inner .tab_panels .panel_part p { font-size: 22px;}
+#what_we_offer .offer_item_inner .tab_panels .panel_part ul li:before { padding-right: 12px; content: "\f105"; font: 14px FontAwesome; color: #0D681F;}
+#what_we_offer .offer_item_inner .tab_panels .panel_part ul {}
+#what_we_offer .offer_item_inner .tab_panels .panel_part ul li { color: #0D681F;}
 @media (max-width: 800px){
 	#what_we_offer { padding: 58px 12px 26px;}
-	#what_we_offer .offer_item { float: none; width: 100%; text-align: left;}
+	#what_we_offer .offer_item { float: none; width: 100%; margin-bottom: 28px; padding-bottom: 10px; text-align: left;}
 	#what_we_offer .offer_item:after { content: ' '; display: block; clear: both;}
 	#what_we_offer .offer_item img { float: left; margin: 0 24px 0 0; vertical-align: middle;}
 	#what_we_offer .offer_item h4, #what_we_offer .offer_item p { padding-left: 155px;}
 	.left-5, .left-10, .left-15 { margin-left: 0;} 
+	#what_we_offer .offer_item_inner { display: none; position: relative; left: 0!important; top: 0; min-height: auto; margin-bottom: 20px; padding-bottom: 30px; border-bottom: 1px solid #D5D5D5;}
+	#what_we_offer .offer_item_inner .breadcrumb { display: none;}
+	#what_we_offer .offer_item_inner .tab_list ul li { float: none;}
+	#what_we_offer .offer_item_inner .tab_list ul li a { border-left: 1px solid transparent;}
+	#what_we_offer .offer_item_inner .tab_panels .panel_part { float: none; width: 100%;}
 }
 /*-----------------End What We Offer section-------------------*/
 
