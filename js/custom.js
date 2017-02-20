@@ -164,23 +164,26 @@ $(document).ready(function() {
   }
 
 //contacts form
-  $('#contacts_form').submit(function() {
+  $('#contacts_form').submit(send_form);
+
+  function send_form() {
     event.preventDefault();
-    var s = false;
-    
-      $(this).find('input:not([type="submit"]), textarea').each(function() {
-        if ($(this).val() == 0) {
-          $(this).css('border', '1px solid red');
-        } else {
-          $(this).css('border', '1px solid #CFCFCF');
-          s = true;
-        }
-      });
-    if (s == false) {
+
+    $(this).find('input:not([type="submit"]), textarea').each(function() {
+      if ($(this).val() == 0) {
+        $(this).addClass('error');
+      } else {
+        $(this).removeClass('error');
+      }
+    });
+    if ($(this).find('.error').length > 0) { //можна й так: if ($(this).find('.error').val() == 0) {
       return false;
     } else {
-      $('#contacts_form').serialize();
+      alert("It's OK");
+      $(this).find('input:not([type="submit"]), textarea').each(function() {
+        $(this).val('');
+      });
     }
-  });
+  }
     
 });
