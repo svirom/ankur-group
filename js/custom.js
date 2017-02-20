@@ -163,6 +163,24 @@ $(document).ready(function() {
     $(this.hash).fadeIn(500);
   }
 
-
+//contacts form
+  $('#contacts_form').submit(function() {
+    event.preventDefault();
+    var s = false;
+    
+      $(this).find('input:not([type="submit"]), textarea').each(function() {
+        if ($(this).val() == 0) {
+          $(this).css('border', '1px solid red');
+        } else {
+          $(this).css('border', '1px solid #CFCFCF');
+          s = true;
+        }
+      });
+    if (s == false) {
+      return false;
+    } else {
+      $('#contacts_form').serialize();
+    }
+  });
     
 });
