@@ -167,23 +167,37 @@ $(document).ready(function() {
   $('#contacts_form').submit(send_form);
 
   function send_form() {
+    var t = $(this);
+    var fields = 'input:not([type="submit"]), textarea';
     event.preventDefault();
-
-    $(this).find('input:not([type="submit"]), textarea').each(function() {
+    t.find(fields).each(function() {
       if ($(this).val() == 0) {
         $(this).addClass('error');
       } else {
         $(this).removeClass('error');
       }
     });
-    if ($(this).find('.error').length > 0) { //можна й так: if ($(this).find('.error').val() == 0) {
+    if (t.find('.error').length > 0) { //можна й так: if ($(this).find('.error').val() == 0) {
       return false;
     } else {
-      alert("It's OK");
-      $(this).find('input:not([type="submit"]), textarea').each(function() {
-        $(this).val('');
+      var form_data = t.serialize();
+      $.ajax({
+        type: 'POST',
+        url: 'sendmail.php',
+        data: form_data,
+        success: function() {
+          alert("It's OK");
+          t.find(fields).each(function() {
+            $(this).val('');
+          });
+        },
+        error: function() {
+          alert("It's not OK");
+        }
+
       });
     }
+    return false;
   }
     
 });

@@ -278,6 +278,10 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
 #contacts .contact_form form textarea:focus:-ms-input-placeholder { opacity: 0; -ms-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
 #contacts #contacts_form input.error,
 #contacts #contacts_form textarea.error { border: 1px solid red;}
+#contacts #contacts_form input:-webkit-autofill,
+#contacts #contacts_form input:-webkit-autofill:hover,
+#contacts #contacts_form input:-webkit-autofill:focus,
+#contacts #contacts_form input:-webkit-autofill:active { background: transparent!important;} /*---Background input with autofill (like email or password input) to reset default---*/
 @media (max-width: 800px){
 	#contacts { padding: 58px 12px 46px;}
 	#contacts p, #contacts h2 { padding: 0;}
