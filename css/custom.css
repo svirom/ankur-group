@@ -324,3 +324,20 @@ footer .main_footer p { margin: 0;}
 	footer .main_footer p { font-size: 14px; line-height: 14px;}
 }
 /*-----------------End Footer section-------------------*/
+
+/*-----------------Articles Page-------------------*/
+.articles_page { padding: 81px 0 67px; background: #fff;}
+.articles_page h2 { margin-bottom: 34px; text-align: center; line-height: 1;}
+.articles_page article { float: left; width: 23.5%; height: 300px; margin-right: 2%; overflow: hidden;}
+.articles_page article:last-of-type { margin-right: 0;}
+.articles_page article:nth-of-type(4n) { margin-right: 0;}
+.articles_page article img { width: 100%;}
+.articles_page article h4 { margin: 12px 0 0;}
+.articles_page article h4 + p { margin: 6px 0 24px;}
+@media (max-width: 800px){
+	.articles_page { padding: 58px 12px 46px;}
+	.articles_page article { float: none; width: 100%; height: auto; margin-bottom: 30px;}
+	.articles_page article:after { content: ' '; display: block; clear: both;}
+	.articles_page article img { float: left; max-width: 192px; margin-right: 12px;}
+}
+/*-----------------End Articles Page-------------------*/
