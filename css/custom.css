@@ -171,7 +171,7 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
 #what_we_offer { padding: 91px 0 26px; text-align: center; background: #FAFAFA;}
 #what_we_offer .container_inner { position: relative; overflow: hidden;}
 #what_we_offer h2 { margin-bottom: 52px; line-height: 1;}
-#what_we_offer .offer_item { float: left; width: 30%; margin-bottom: 38px; padding-top: 3px; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease;}
+#what_we_offer .offer_item { float: left; width: 30%; margin-bottom: 38px; padding-top: 30px; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease;}
 #what_we_offer .offer_item:hover { cursor: pointer; -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.8); -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.8); box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.8); -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease;}
 #what_we_offer .offer_item h4 { margin: 15px 0 0 0;}
 #what_we_offer .offer_item p { margin-top: 8px; padding: 0 18px;}
