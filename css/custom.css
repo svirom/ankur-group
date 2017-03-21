@@ -134,7 +134,7 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
 /*-----------------End Header section-------------------*/
 
 /*-----------------Main Image section-------------------*/
-.main_image { min-height: 220px; background: #fff url(../img/main_image.png) center center no-repeat; background-size: cover; background-attachment: fixed;}
+.main_image { min-height: 220px; background: #fff /*url(../img/main_image.png)*/url(../img/_MG_0368.JPG) center center no-repeat; background-size: cover; background-attachment: fixed;}
 .main_image .image_text { float: right; max-width: 567px; margin: 100px 0 124px;
 	background: rgba(10,102,29,1.0);
 	background: -moz-linear-gradient(left, rgba(10,102,29,0.52) 0%, rgba(10,102,29,0.86) 25%, rgba(10,102,29,1) 50%, rgba(10,102,29,1) 100%);
