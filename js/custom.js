@@ -64,7 +64,7 @@ $(document).ready(function() {
   $('a.nav-opener').click(function() {
     if ($('body').width() < 784)
       $(this).toggleClass('nav-active');
-    $('nav#main_menu>ul').slideToggle(300);
+      $('nav#main_menu>ul').slideToggle(300);
   });
 
 //show menu after resize from smaller resolution
@@ -177,7 +177,7 @@ $(document).ready(function() {
         $(this).removeClass('error');
       }
     });
-    if (t.find('.error').length > 0) { //можна й так: if ($(this).find('.error').val() == 0) {
+    if (t.find('.error').length > 0) {
       return false;
     } else {
       var form_data = t.serialize();
