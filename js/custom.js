@@ -26,14 +26,6 @@ $(document).ready(function() {
     }
   });
 
-//parallax text on main image
-  $(window).scroll(function() {
-    var st = $(this).scrollTop();
-    $('.image_text').css({
-      "transform": "translate(0, -" + st / 6 + "%)"
-    });
-  });
-
 //resize menu on scroll
   $(window).scroll(function() {
     if (($(this).scrollTop() > 536) && ($('header.main_header').width() >= 784)) {
@@ -165,6 +157,7 @@ $(document).ready(function() {
 
 //contacts form
   $('#contacts_form').submit(send_form);
+  $('#msg_form').submit(send_form);
 
   function send_form() {
     var t = $(this);
@@ -199,5 +192,11 @@ $(document).ready(function() {
     }
     return false;
   }
+
+//message box
+  $('.msg_box a').click(function(){
+    event.preventDefault();
+    $(this).siblings('.contact_form').slideToggle(300);
+  })
     
 });
