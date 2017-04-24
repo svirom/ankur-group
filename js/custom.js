@@ -15,6 +15,11 @@ $(document).ready(function() {
     });
   });
 
+//button More...
+  $(".about_us button").click(function() {
+    $(this).addClass('inactive').next('div').slideDown(300);
+  });
+
 //accordion Documentation
   $(".accordion h4").click(function() {
     if ($(this).next("div").is(":visible")) {
@@ -68,20 +73,6 @@ $(document).ready(function() {
     if ($('body').width() >= 784)
       $('nav#main_menu>ul').css("display", "block");
   });
-
-//search button on mobile menu
-    
-    /*$('button.search_switch').click(function(){
-      if ($(this).hasClass('clicked')) { 
-          $(this).prev('div').find('input').animate({'width' : '0'}, 400);
-          $(this).prev('div').css('border-width','0').find('button').css('display','none');
-          $(this).removeClass('clicked').find('i').replaceWith('<i class="fa fa-search"></i>');
-      } else {
-        $(this).prev('div').find('input').css('display','block').animate({'width' : '120'}, 400);
-        $(this).prev('div').css('border-width','1').find('button').css('display','block');
-        $(this).addClass('clicked').find('i').replaceWith('<i class="fa fa-times"></i>');
-      }
-    });*/
 
   $('button.search_switch').click(button_search);
 
@@ -146,11 +137,8 @@ $(document).ready(function() {
   function tabs() {
     var t = $(this);
     event.preventDefault();
-    //$('.tab_list li').removeClass('active');
-    //$(this).closest('li').addClass('active');
     t.closest('ul').find('li').removeClass('active');
     t.closest('li').addClass('active');
-    //$('.tab_panels>div').css('display','none');
     t.closest('.tab_list').next('.tab_panels').children('div').css('display', 'none');
     $(this.hash).fadeIn(500);
   }
