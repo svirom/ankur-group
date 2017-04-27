@@ -119,7 +119,7 @@ $(document).ready(function() {
       });
       $(this).next('.offer_item_inner').animate({
         'left': '0%'
-      }, 500);
+      }, 500)
     } else {
       $(this).next('.offer_item_inner').slideToggle(500);
     }
