@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+//sliders
+  $('.slider_air').slider();
+  $('.slider_hel').slider();
+
 
 //smooth scroll to anchor "#"
   $('#main_menu a[href^="#"]').bind('click.smoothscroll', function(e) {

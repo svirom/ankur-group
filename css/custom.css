@@ -209,11 +209,15 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
 #what_we_offer .offer_item_inner .tab_panels>div { display: none; padding-top: 18px;}
 #what_we_offer .offer_item_inner .tab_panels>div:first-of-type { display: block;}
 #what_we_offer .offer_item_inner .tab_panels>div:after { content: ' '; display: block; clear: both;}
-#what_we_offer .offer_item_inner .tab_panels .panel_part { float: left; width: 25%;}
-#what_we_offer .offer_item_inner .tab_panels .panel_part p { font-size: 22px;}
-#what_we_offer .offer_item_inner .tab_panels .panel_part ul li:before { padding-right: 12px; content: "\f105"; font: 14px FontAwesome; color: #0D681F;}
-#what_we_offer .offer_item_inner .tab_panels .panel_part ul {}
-#what_we_offer .offer_item_inner .tab_panels .panel_part ul li { color: #0D681F;}
+#what_we_offer .offer_item_inner .tab_panels .slider_item { float: left; /*width: 100%;*/}
+#what_we_offer .offer_item_inner .tab_panels .slider_item p { font-size: 22px;}
+#what_we_offer .offer_item_inner .tab_panels .slider_item ul li:before { padding-right: 12px; content: "\f105"; font: 14px FontAwesome; color: #0D681F;}
+#what_we_offer .offer_item_inner .tab_panels .slider_item ul {}
+#what_we_offer .offer_item_inner .tab_panels .slider_item ul li { color: #0D681F;}
+#what_we_offer .offer_item_inner .tab_panels .slider_air,
+#what_we_offer .offer_item_inner .tab_panels .slider_hel { position: relative; width: 100%; overflow: hidden;}
+.prev { position: absolute; top: 50%; left: 0; cursor: pointer; }
+.next { position: absolute; top: 50%; right: 0; cursor: pointer; }
 @media (max-width: 800px){
 	#what_we_offer { padding: 58px 12px 26px;}
 	#what_we_offer .offer_item { float: none; width: 100%; margin-bottom: 28px; padding-bottom: 10px; text-align: left;}
@@ -225,7 +229,7 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
 	#what_we_offer .offer_item_inner .breadcrumb { display: none;}
 	#what_we_offer .offer_item_inner .tab_list ul li { float: none;}
 	#what_we_offer .offer_item_inner .tab_list ul li a { border-left: 1px solid transparent;}
-	#what_we_offer .offer_item_inner .tab_panels .panel_part { float: none; width: 100%;}
+	/*#what_we_offer .offer_item_inner .tab_panels .slider_item { float: none; width: 100%;}*/
 }
 /*-----------------End What We Offer section-------------------*/
 
