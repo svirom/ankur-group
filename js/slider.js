@@ -12,7 +12,7 @@
 				/*---Changing a number of slides in mobile view---*/
 				if ($('body').width() <= 783) {
 					var n = 1;
-					var slideWidth = $('.offer_item').width();
+					var slideWidth = $('.offer_item_inner').width();
 				} else {
 					var n = 4; //number of slides to show
 					var slideWidth = ($this.width()) / 4;
@@ -25,7 +25,7 @@
 						/*---Changing a number of slides in mobile view---*/
 						if ($('body').width() <= 783) {
 							var n = 1;
-							var slideWidth = $('.offer_item').width();
+							var slideWidth = $('.offer_item_inner').width();
 							$this.find('.slides').css({
 								'width': NumberOfSlides * slideWidth,
 								'marginLeft': (i - 1) * (-slideWidth)

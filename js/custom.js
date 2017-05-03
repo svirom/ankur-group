@@ -73,7 +73,7 @@ $(document).ready(function() {
     if ($('body').width() < 784)
       $('nav#main_menu>ul').css("display", "none");
     $('a.nav-opener').removeClass('nav-active');
-    $('.offer_item_inner').css('display', 'none');
+    //$('.offer_item_inner').css('display', 'none');
     if ($('body').width() >= 784)
       $('nav#main_menu>ul').css("display", "block");
   });
