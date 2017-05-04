@@ -3,6 +3,9 @@ $(document).ready(function() {
 //sliders
   $('.slider_air').slider();
   $('.slider_hel').slider();
+  $('.slider_equip').slider();
+  $('.slider_sup').slider();
+  $('.slider_prod').slider();
 
 
 //smooth scroll to anchor "#"
