@@ -1,8 +1,22 @@
 <?php
 // Variables
-$name = trim($_POST['name']);
+$select = trim($_POST['sel']);
+$model = trim($_POST['model']);
 $email = trim($_POST['email']);
 $message = trim($_POST['message']);
+$sale = 'nothing';
+	if ($select == 'buy_air') {
+    	$sale = 'Purchase aircraft';
+	}
+	elseif ($select == 'sell_air') {
+    	$sale = 'Sell aircraft';
+	}
+	elseif ($select == 'buy_hel') {
+    	$sale = 'Purchase helicopter';
+	}
+	elseif ($select == 'sell_hel') {
+    	$sale = 'Sell helicopter';
+	}
 
 // Email address validation - works with php 5.2+
 function is_email_valid($email) {
@@ -11,16 +25,17 @@ function is_email_valid($email) {
 
 // Avoid Email Injection and Mail Form Script Hijacking
 $pattern = "/(content-type|bcc:|cc:|to:)/i";
-if( preg_match($pattern, $name) || preg_match($pattern, $email) || preg_match($pattern, $message) ) {
+if( preg_match($pattern, $email) || preg_match($pattern, $message) ) {
 	exit;
 }
 
 // Email will be send
 $to = "svjatoslav.romanjuk@gmail.com"; // Change with your email address
-$sub = "$name from Ankur Group Corporation"; // You can define email subject
+$sub = "$email from Ankur Group Corporation"; // You can define email subject
 // HTML Elements for Email Body
 $body = <<<EOD
-<strong>Name:</strong> $name <br>
+<strong>You want to:</strong> $sale <br>
+<strong>Model:</strong> $model <br>
 <strong>Email:</strong> <a href="mailto:$email?subject=feedback" "email me">$email</a> <br> <br>
 <strong>Message:</strong> $message <br>
 EOD;

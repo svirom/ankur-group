@@ -124,8 +124,7 @@
                 <div class="tab_list">
                     <ul>
                         <li class="active"><a href="#air_selling">Selling</a></li>
-                        <li><a href="#air_sale_form">Add aircraft for sale</a></li>
-                        <li><a href="#air_buy_form">Purchase requisition form</a></li>
+                        <li><a href="#air_sale_form">Contact us to purchase/sell aircraft</a></li>
                     </ul>    
                 </div>
                 <div class="tab_panels">
@@ -170,11 +169,22 @@
                         <div class="prev"><img src="img/arrow_left.png" alt="Arrow"></div>
                         <div class="next"><img src="img/arrow_right.png" alt="Arrow"></div>    
                     </div>
-                    <div id="air_sale_form">
-                        
-                    </div>
-                    <div id="air_buy_form">
-                        
+                    <div id="air_sale_form" class="sale_form">
+                        <form id="aircraft_form" action="/" method="post">
+                            <label for="air_sale_select">You want to:</label>
+                            <select id="air_sale_select" name="sel" class="required">
+                                <option value="0"></option>
+                                <option value="buy_air">Buy aircraft</option>
+                                <option value="sell_air">Sell aircraft</option>
+                            </select>
+                            <label for="air_model">Type here the model:</label>
+                            <input type="text" name="model" placeholder="Model" id="air_model">
+                            <label for="air_email">Type here your email:</label>
+                            <input type="email" name="email" placeholder="Email" id="air_email" class="required">
+                            <label for="air_message">Type here your message (name, contacts etc.):</label>
+                            <textarea name="message" placeholder="Message" id="air_message" class="required"></textarea>
+                            <input type="submit" value="SEND">
+                        </form>
                     </div>
                 </div>
             </div>
@@ -190,8 +200,7 @@
                 <div class="tab_list">
                     <ul>
                         <li class="active"><a href="#hel_selling">Selling</a></li>
-                        <li><a href="#hel_sale_form">Add helicopter for sale</a></li>
-                        <li><a href="#hel_buy_form">Purchase requisition form</a></li>
+                        <li><a href="#hel_sale_form">Contact us to purchase/sell helicopter</a></li>
                     </ul>    
                 </div>
                 <div class="tab_panels">
@@ -236,11 +245,22 @@
                         <div class="prev"><img src="img/arrow_left.png" alt="Arrow"></div>
                         <div class="next"><img src="img/arrow_right.png" alt="Arrow"></div>  
                     </div>
-                    <div id="hel_sale_form">
-                        
-                    </div>
-                    <div id="hel_buy_form">
-                        
+                    <div id="hel_sale_form" class="sale_form">
+                        <form id="helicopter_form" action="/" method="post">
+                            <label for="hel_sale_select">You want to:</label>
+                            <select id="hel_sale_select" name="sel" class="required">
+                                <option value="0"></option>
+                                <option value="buy_hel">Buy helicopter</option>
+                                <option value="sell_hel">Sell helicopter</option>
+                            </select>
+                            <label for="hel_model">Type here the model:</label>
+                            <input type="text" name="model" placeholder="Model" id="hel_model">
+                            <label for="hel_email">Type here your email:</label>
+                            <input type="email" name="email" placeholder="Email" id="hel_email" class="required">
+                            <label for="hel_message">Type here your message (name, contacts etc.):</label>
+                            <textarea name="message" placeholder="Message" id="hel_message" class="required"></textarea>
+                            <input type="submit" value="SEND">
+                        </form>
                     </div>
                 </div>
             </div>
@@ -497,9 +517,9 @@
             </div>
             <div class="contact_form">
                 <form id="contacts_form" action="/" method="post">
-                    <input type="text" name="name" placeholder="Name">
-                    <input type="email" name="email" placeholder="Email">
-                    <textarea name="message" placeholder="Message"></textarea>
+                    <input type="text" name="name" placeholder="Name" class="required">
+                    <input type="email" name="email" placeholder="Email" class="required">
+                    <textarea name="message" placeholder="Message" class="required"></textarea>
                     <input type="submit" value="SEND">
                 </form>
             </div>
@@ -554,9 +574,9 @@
         <div class="clear"></div>
         <div class="contact_form">
             <form id="msg_form" action="/" method="post">
-                <input type="text" name="name" placeholder="Name">
-                <input type="email" name="email" placeholder="Email">
-                <textarea name="message" placeholder="Message"></textarea>
+                <input type="text" name="name" placeholder="Name" class="required">
+                <input type="email" name="email" placeholder="Email" class="required">
+                <textarea name="message" placeholder="Message" class="required"></textarea>
                 <input type="submit" value="SEND">
             </form>
         </div>
@@ -565,6 +585,7 @@
 
     <script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="./js/slider.js"></script>
+    <script type="text/javascript" src="./js/forms.js"></script>
     <script type="text/javascript" src="./js/custom.js"></script>
 </body>
 </html>

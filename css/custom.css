@@ -9,7 +9,7 @@ font-family: 'Josefin Sans', sans-serif;
 /*-----------------CSS reset-------------------*/
 * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 body { margin: 0; border: 0; padding: 0; outline: 0; vertical-align: baseline; background: transparent; font: normal 400 16px/24px 'Open Sans', sans-serif; color: #424242;-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
-input, button, textarea { -webkit-appearance: none; outline: none;}
+input, button, textarea, select { -webkit-appearance: none; outline: none;}
 h1, h2, h3, h4, h5, h6 { font-weight:normal;}
 ol, ul, li { list-style: none; margin: 0; padding: 0;}
 img { max-width: 100%; border: none; outline: none;}
@@ -191,7 +191,7 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
 .left-5 { margin-left: 5%;}
 .left-10 { margin-left: 10%;}
 .left-15 { margin-left: 15%;}
-#what_we_offer .offer_item_inner { position: absolute; top: 60px; left: 100%; width: 100%; max-width: 1100px; min-height: 780px; text-align: left; background: #FAFAFA;}
+#what_we_offer .offer_item_inner { position: absolute; top: 60px; left: 100%; width: 100%; max-width: 1100px; min-height: 830px; text-align: left; background: #FAFAFA;}
 #what_we_offer .offer_item_inner .breadcrumb p { font-size: 22px;}
 #what_we_offer .offer_item_inner .breadcrumb p a { position: relative; margin-right: 10px; padding-left: 7px; font-size: 12px; color: #0D681F; }
 #what_we_offer .offer_item_inner .breadcrumb p a i { position: absolute; left: 0; top: 3px; -moz-transform: scaleX(1.5); -ms-transform: scaleX(1.5); -webkit-transform: scaleX(1.5); -o-transform: scaleX(1.5); transform: scaleX(1.5);}
@@ -226,6 +226,39 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
 .next img { padding: 16px 20px 17px; border-radius: 50%;}
 .prev:hover,
 .next:hover { background-color: rgba(0, 0, 0, 0.5); -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease;}
+#what_we_offer .sale_form { float: left; width: 50%; margin-top: 27px; padding-left: 28px;}
+#what_we_offer .sale_form form label { font-size: 20px; }
+#what_we_offer .sale_form form select,
+#what_we_offer .sale_form form input,
+#what_we_offer .sale_form form textarea { width: 100%; margin: 6px 0 13px; padding: 11px 14px; border: 1px solid #CFCFCF; font: 20px/24px 'Open Sans', sans-serif; color: #424242;}
+#what_we_offer .sale_form form textarea { height: 160px; resize: none;}
+#what_we_offer .sale_form form select { background: #FFFFFF url(../img/select_arrow.png) 95% center no-repeat;}
+#what_we_offer .sale_form form select:focus,
+#what_we_offer .sale_form form input:focus,
+#what_we_offer .sale_form form textarea:focus { -webkit-box-shadow: 0px 0px 1px 1px #CFCFCF; -moz-box-shadow: 0px 0px 1px 1px #CFCFCF; box-shadow: 0px 0px 1px 1px #CFCFCF;}
+#what_we_offer .sale_form form input[type="submit"] { font-size: 22px; border: 1px solid #0D681F; color: #FFFFFF; background: #0D681F; -webkit-transition: background 0.3s ease; -moz-transition: background 0.3s ease; -o-transition: background 0.3s ease; transition: background 0.3s ease;}
+#what_we_offer .sale_form form input[type="submit"]:hover, 
+#what_we_offer .sale_form form input[type="submit"]:active { background: #045316; -webkit-transition: background 0.3s ease; -moz-transition: background 0.3s ease; -o-transition: background 0.3s ease; transition: background 0.3s ease;}
+#what_we_offer .sale_form form input::-webkit-input-placeholder,
+#what_we_offer .sale_form form textarea::-webkit-input-placeholder { color: rgba(66, 66, 66, 0.7); -webkit-transition: color 0.3s ease; transition: color 0.3s ease;}
+#what_we_offer .sale_form form input::-moz-placeholder,
+#what_we_offer .sale_form form textarea::-moz-placeholder { color: rgba(66, 66, 66, 0.7); -moz-transition: color 0.3s ease; transition: color 0.3s ease;}
+#what_we_offer .sale_form form input:-moz-placeholder,
+#what_we_offer .sale_form form textarea:-moz-placeholder { color: rgba(66, 66, 66, 0.7); -moz-transition: color 0.3s ease; transition: color 0.3s ease;}
+#what_we_offer .sale_form form input:-ms-input-placeholder,
+#what_we_offer .sale_form form textarea:-ms-input-placeholder { color: rgba(66, 66, 66, 0.7); -ms-transition: color 0.3s ease; transition: color 0.3s ease;}
+#what_we_offer .sale_form form input:focus::-webkit-input-placeholder,
+#what_we_offer .sale_form form textarea:focus::-webkit-input-placeholder { color: rgba(66, 66, 66, 0); -webkit-transition: color 0.3s ease; transition: color 0.3s ease;}
+#what_we_offer .sale_form form input:focus::-moz-placeholder,
+#what_we_offer .sale_form form textarea:focus::-moz-placeholder { color: rgba(66, 66, 66, 0); -moz-transition: color 0.3s ease; transition: color 0.3s ease;}
+#what_we_offer .sale_form form input:focus:-moz-placeholder,
+#what_we_offer .sale_form form textarea:focus:-moz-placeholder { color: rgba(66, 66, 66, 0); -moz-transition: color 0.3s ease; transition: color 0.3s ease;}
+#what_we_offer .sale_form form input:focus:-ms-input-placeholder,
+#what_we_offer .sale_form form textarea:focus:-ms-input-placeholder { color: rgba(66, 66, 66, 0); -ms-transition: color 0.3s ease; transition: color 0.3s ease;}
+#what_we_offer .sale_form select.error,
+#what_we_offer .sale_form input.error,
+#what_we_offer .sale_form textarea.error { border: 1px solid red;}
+
 @media (max-width: 800px){
 	#what_we_offer { padding: 58px 12px 26px;}
 	#what_we_offer .offer_item { float: none; width: 100%; margin-bottom: 28px; padding-bottom: 10px; text-align: left;}
@@ -239,6 +272,7 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
 	#what_we_offer .offer_item_inner .tab_list ul li a { border-left: 1px solid transparent;}
 	/*#what_we_offer .offer_item_inner .tab_panels .slider_item { float: none; width: 100%;}*/
 	#what_we_offer .offer_item_inner .tab_panels .slider_item img { display: block; margin: 0 auto; }
+	#what_we_offer .sale_form { float: none; width: 100%; }
 }
 /*-----------------End What We Offer section-------------------*/
 
