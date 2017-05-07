@@ -34,16 +34,18 @@ $to = "svjatoslav.romanjuk@gmail.com"; // Change with your email address
 $sub = "$email from Ankur Group Corporation"; // You can define email subject
 // HTML Elements for Email Body
 $body = <<<EOD
-<strong>You want to:</strong> $sale <br>
-<strong>Model:</strong> $model <br>
-<strong>Email:</strong> <a href="mailto:$email?subject=feedback" "email me">$email</a> <br> <br>
-<strong>Message:</strong> $message <br>
+<h3 style="font-size:22px; font-weight:400">The message from Ankur Group Corporation website (purchase/sale)</h3>
+<hr>
+<p style="font-size:20px; margin: 12px 0;"><strong>You want to:</strong> $sale</p>
+<p style="font-size:20px; margin: 12px 0;"><strong>Model:</strong> $model</p>
+<p style="font-size:20px; margin: 12px 0;"><strong>Email:</strong> <a href="mailto:$email?subject=feedback" "email me">$email</a></p>
+<p style="font-size:20px; margin: 12px 0;"><strong>Message:</strong> $message</p>
 EOD;
 //Must end on first column
 	
 $headers = "From: $name <$email>\r\n";
 $headers .= 'MIME-Version: 1.0' . "\r\n";
-$headers .= 'Content-type: text/html; charset=windows-1251' . "\r\n";
+$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 
 // PHP email sender
 mail($to, $sub, $body, $headers);

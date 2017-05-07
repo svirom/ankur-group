@@ -6,6 +6,7 @@ $(document).ready(function() {
   $('.slider_equip').slider();
   $('.slider_sup').slider();
   $('.slider_prod').slider();
+  $('.slider_docs').slider();
 
 
 //smooth scroll to anchor "#"
@@ -25,17 +26,6 @@ $(document).ready(function() {
 //button More...
   $(".about_us button").click(function() {
     $(this).addClass('inactive').next('div').slideDown(300);
-  });
-
-//accordion Documentation
-  $(".accordion h4").click(function() {
-    if ($(this).next("div").is(":visible")) {
-      $(this).next("div").slideUp("slow");
-      $(".accordion:first-of-type .accord_content").slideUp("slow");
-    } else {
-      $(".accordion .accord_content").slideUp("slow");
-      $(this).next("div").slideToggle("slow");
-    }
   });
 
 //resize menu on scroll

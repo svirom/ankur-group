@@ -67,6 +67,9 @@ $(document).ready(function() {
           $this.find(fields).each(function() {
             $(this).val('');
           });
+          $this.find('input:not([type="submit"])').each(function(){
+          	$(this).val('');
+          });
         },
         error: function() {
           alert("It's not OK");

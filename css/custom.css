@@ -114,7 +114,6 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
 	.container_inner { padding: 0;}
   	.nav-opener { display: block;}
   	header.main_header a.logo img { display: none;}
-  	/*header.main_header .header_top { display: none;}*/
   	header.main_header .header_top a.logo { display: none;}
   	header.main_header .header_top .social p { display: none;}
   	header.main_header .header_top .social ul { display: none;}
@@ -126,7 +125,7 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
   	header.main_header .search_form button { display: none;}
   	header.main_header.fixed .search_form { display: block;}
   	header.main_header button.search_switch { display: block; position: absolute; top: 22px; right: 140px; border: transparent;}
-  	header.main_header #main_menu ul { display: none; /*position: relative;*/}
+  	header.main_header #main_menu ul { display: none;}
   	header.main_header #main_menu ul li { float: none; display: list-item; height: 64px; border-top: 1px solid #D5D5D5;}
   	header.main_header #main_menu ul li:last-child { border-bottom: 1px solid #D5D5D5;}
   	header.main_header #main_menu ul li:after { display: none;}
@@ -161,7 +160,6 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
 .about_us .container_inner { padding-top: 20px; background: #fff; }
 .about_us p { margin-bottom: 24px; text-align: center; font-size: 20px; line-height: 32px;}
 .about_us h2 { margin-bottom: 32px; text-align: center; line-height: 1;}
-/*.about_us h2 + p { font-size: 20px; line-height: 32px;}*/
 .about_us h4 { margin: 74px 0 15px; font-size: 24px; font-weight: 700; text-align: center;}
 .about_us h4:before { content: ' '; display: block; position: absolute; left: 50%; width: 14px; height: 14px; margin-left: -7px; margin-top: -44px; border-radius: 50%; background-color: #C6C6C6;}
 .about_us h4:after { content: ' '; display: block; position: absolute; left: 50%; width: 160px; height: 1px; margin-left: -80px; margin-top: -71px;background-color: #C6C6C6;}
@@ -270,7 +268,6 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
 	#what_we_offer .offer_item_inner .breadcrumb { display: none;}
 	#what_we_offer .offer_item_inner .tab_list ul li { float: none; height: auto;}
 	#what_we_offer .offer_item_inner .tab_list ul li a { border-left: 1px solid transparent;}
-	/*#what_we_offer .offer_item_inner .tab_panels .slider_item { float: none; width: 100%;}*/
 	#what_we_offer .offer_item_inner .tab_panels .slider_item img { display: block; margin: 0 auto; }
 	#what_we_offer .sale_form { float: none; width: 100%; }
 }
@@ -279,35 +276,23 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
 /*-----------------Documentation section-------------------*/
 #documentation { padding: 91px 0 89px; text-align: center; background: #fff;}
 #documentation h2 { margin-bottom: 32px; line-height: 1;}
-#documentation h2 + p { font-size: 20px; line-height: 32px; /*text-indent: 12px;*/}
-#documentation .accordion { position: relative;}
-#documentation .accordion .accord_item { margin-top: 70px;}
-#documentation .accordion .accord_item:after { content: ' '; display:block; position: absolute; left: 0; width: 100%; height: 1px; margin-top: 34px; background-color: #C6C6C6;}
-#documentation .accordion .accord_item:last-of-type:after { display: none;}
-#documentation .accordion .accord_item h4 { margin-bottom: 0; padding: 6px 6px 6px 50px; text-align: left; font-size: 22px; color: #248037; background: url(../img/icon_document.png) left center no-repeat; -webkit-transition: opacity 0.3s ease; -moz-transition: opacity 0.3s ease; -o-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
-#documentation .accordion .accord_item h4:hover, 
-#documentation .accordion .accord_item h4:active { cursor: pointer; opacity: 0.7; -webkit-transition: opacity 0.3s ease; -moz-transition: opacity 0.3s ease; -o-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
-#documentation .accordion .accord_item .accord_content { display: none; padding-top: 34px; text-align: left;}
-#documentation .accordion .accord_item:first-of-type .accord_content { display: block;}
-#documentation .accordion .accord_item .accord_content:after { content: ' '; display: block; clear: both;}
-#documentation .accordion .accord_item .accord_content img { float: left; width: 23.5%; margin-left: 2%;}
-#documentation .accordion .accord_item .accord_content img:first-child { margin-left: 0;}
+#documentation .slider_docs { position: relative; width: 100%; margin-top: 30px; overflow: hidden;}
+#documentation .slider_docs .slider_item { float: left; padding: 0 5px;}
+#documentation p { margin-bottom: 0; padding: 6px 6px 6px 50px; text-align: left; font-size: 22px; color: #248037; background: url(../img/icon_document.png) left center no-repeat;}
 @media (max-width: 800px){
 	#documentation { padding: 58px 12px 26px;}
-	#documentation p, #documentation h2, #documentation .accordion { padding: 0;}	
+	#documentation h2 { padding: 0;}	
 }
 /*-----------------End Documentation section-------------------*/
 
 /*-----------------Contacts section-------------------*/
 #contacts { padding: 81px 0 64px; text-align: center; background: #FAFAFA;}
 #contacts h2 { margin-bottom: 32px; line-height: 1;}
-#contacts h2 + p { font-size: 20px; line-height: 32px; /*text-indent: 12px;*/}
+#contacts h2 + p { font-size: 20px; line-height: 32px;}
 #contacts .contact_img { float: left; width: 25%; margin-top: 27px; text-align: left;}
 #contacts .contact_data { float: left; width: 35%; margin-top: 27px; padding: 0 8px 0 28px;}
-#contacts .contact_data p { margin: 6px 0; padding: 0 8px 0 8px; text-align: left; line-height: 1.3;}
-#contacts .contact_data p:first-of-type { margin: 11px 0 24px;}
-#contacts .contact_data p:last-child { margin: 32px 0 16px; line-height: 24px;}
-#contacts .contact_data p span { font-size: 32px; font-weight: bold;}
+#contacts .contact_data p { margin: 12px 0; padding: 0 8px 0 8px; text-align: left; line-height: 1.3;}
+#contacts .contact_data p span { font-size: 20px; font-weight: bold;}
 #contacts .contact_data p a { color: #3B994E; -webkit-transition: opacity 0.3s ease; -moz-transition: opacity 0.3s ease; -o-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
 #contacts .contact_data p a:hover,
 #contacts .contact_data p a:active { opacity: 0.7; -webkit-transition: opacity 0.3s ease; -moz-transition: opacity 0.3s ease; -o-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
@@ -349,7 +334,6 @@ header.main_header.fixed.fixed_out .container_nav { -webkit-animation-name: fade
 	#contacts .contact_img { display: none;}
 	#contacts .contact_data { float: none; width: 100%; padding: 0;}
 	#contacts .contact_data p { text-align: center;}
-	#contacts .contact_data p:last-child { max-width: 336px; margin: 32px auto 16px;}	
 	#contacts .contact_form { float: none; width: 100%; padding: 0;}
 }
 /*-----------------End Contacts section-------------------*/

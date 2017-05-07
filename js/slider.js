@@ -7,45 +7,22 @@
 				var $this = $(this);
 				var NumberOfSlides = $this.find('.slider_item').length;
 				var n = 4; //number of slides to show
-				//var slideWidth = ($this.width())/n;
+				var slideWidth = ($this.width())/n;
 				var i = 1;
 				/*---Changing a number of slides in mobile view---*/
 				if ($('body').width() <= 783) {
 					var n = 1;
-					var slideWidth = $('.offer_item_inner').width();
+					//var slideWidth = $('.offer_item_inner').width();
+					var slideWidth = $('.container_inner').width();
 				} else {
-					var n = 4; //number of slides to show
-					var slideWidth = ($this.width()) / 4;
+					var n = 4;
+					//var slideWidth = ($this.width()) / 4;
 				}
 				/*------------------------------------------------*/
 				
-				//change dimensions on resize window
-				$(window).resize(function() {
+				//add arrows to sliders
+				$this.find('.slides').after("<div class='prev'><img src='img/arrow_left.png' alt='Arrow'></div><div class='next'><img src='img/arrow_right.png' alt='Arrow'></div>");
 
-						/*---Changing a number of slides in mobile view---*/
-						if ($('body').width() <= 783) {
-							var n = 1;
-							var slideWidth = $('.offer_item_inner').width();
-							$this.find('.slides').css({
-								'width': NumberOfSlides * slideWidth,
-								'marginLeft': (i - 1) * (-slideWidth)
-							});
-							$this.find('.slider_item').css('width', slideWidth);
-						} 
-						if ($('body').width() > 783) {
-							var n = 4; //number of slides to show
-							slideWidth = ($this.width()) / n;
-							$this.find('.slides').css({
-								'width': NumberOfSlides * slideWidth,
-								'marginLeft': (i - 1) * (-slideWidth)
-							});
-							$this.find('.slider_item').css('width', slideWidth);
-						}
-						/*------------------------------------------------*/
-						
-				})
-					//-----------------------//
-				
 				$this.find('.slides').css({
 					'width': NumberOfSlides * slideWidth,
 					'marginLeft': 0
@@ -70,6 +47,30 @@
 						return false;
 					}
 				})
+
+				//change dimensions on resize window
+				$(window).resize(function() {
+
+						/*---Changing a number of slides in mobile view---*/
+						if ($('body').width() <= 783) {
+							var n = 1;
+							//var slideWidth = $('.offer_item_inner').width();
+							var slideWidth = $('.container_inner').width();
+						} 
+						if ($('body').width() > 783) {
+							var n = 4; //number of slides to show
+							var slideWidth = ($this.width()) / n;
+						}
+						/*------------------------------------------------*/
+						//slideWidth = ($this.width())/n;
+						/*$this.find('.slides').css({
+							'width': NumberOfSlides * slideWidth,
+							'marginLeft': (i - 1) * (-slideWidth)
+						});
+						$this.find('.slider_item').css('width', slideWidth);*/
+						
+				})
+				//-----------------------//
 
 			})
 
